@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "web-packages",
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
