@@ -1,0 +1,5 @@
+{
+  "name": "@foursquare/utils",
+  "version": "0.0.2",
+  "main": "src/index.js"
+}
