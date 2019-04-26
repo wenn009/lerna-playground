@@ -1,6 +1,5 @@
 {
   "name": "@foursquare/eslint-config",
-  "private": true,
   "version": "0.0.0",
   "description": "Common eslint config for Foursquare",
   "main": "index.js",
