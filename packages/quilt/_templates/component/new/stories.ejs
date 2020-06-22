@@ -1,0 +1,27 @@
+---
+to: src/stories/<%= h.changeCase.pascal(rawComponentName) %>/<%= h.changeCase.pascal(rawComponentName) %>.stories.tsx
+---
+<% component = h.changeCase.pascal(rawComponentName) -%>
+import { text, withKnobs } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { Container, ContainerCol, ContainerRow, <%= component %> } from '../../../dist/index';
+
+storiesOf('<%= component %>', module)
+  .addDecorator(withKnobs)
+  .add('<%= component %>', () => (
+    <Container>
+      <ContainerRow>
+        <ContainerCol size={4} offset={4}>
+          <<%= component %>
+            header={text('header', 'Puppies!?')}
+            imgSrc={text('imgSrc', 'http://place-puppy.com/200x200')}
+            text={text(
+              'text',
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.'
+            )}
+          />
+        </ContainerCol>
+      </ContainerRow>
+    </Container>
+  ));

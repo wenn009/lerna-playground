@@ -1,0 +1,28 @@
+---
+to: src/themes/default/<%= h.changeCase.pascal(rawComponentName) %>.ts
+---
+<% component = h.changeCase.pascal(rawComponentName) -%>
+import { <%= component %>Theme } from '../../components/<%= component %>/interface';
+import {
+  bg_white,
+  pd_bottom_xs,
+  pd_x_xl,
+  pd_y_md,
+  rounded,
+  shadow,
+  width_full,
+} from './styles';
+
+const <%= component %>Theme: <%= component %>Theme = {
+  wrapper: [bg_white, rounded, shadow],
+  image: [width_full],
+  content: [pd_x_xl, pd_y_md],
+  header: {
+    text: pd_bottom_xs,
+  },
+  text: {
+    text: undefined,
+  },
+};
+
+export { <%= component %>Theme };
