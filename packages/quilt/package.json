@@ -31,16 +31,16 @@
     "print:component-instructions": "node ./scripts/componentInstructions.js",
     "serve": "http-server ./static -p 8080",
     "storybook:build": "build-storybook -c .storybook -o ./static/storybook",
-    "storybook:build:watch": "npm run storybook:build -w",
+    "storybook:build:watch": "npm run storybook:build -- -w",
     "storybook:dev": "start-storybook -p 9001 -c .storybook --ci",
     "test": "is-ci && npm run test:coverage || npm run test:watch",
     "test:coverage": "jest --coverage",
-    "test:e2e": "is-ci && npm run test:e2e:|| npm run test:e2e:dev",
+    "test:e2e": "is-ci && npm run test:e2e:run || npm run test:e2e:dev",
     "test:e2e:run": "start-server-and-test build-and-serve http://localhost:8080/ cy:run",
     "test:e2e:dev": "start-server-and-test serve http://localhost:8080/ cy:open",
     "test:watch": "jest --watchAll",
     "ts": "rimraf ./dist && npm run build:icons && tsc -p tsconfig.json",
-    "ts:watch": "npm run ts --watch"
+    "ts:watch": "npm run ts -- --watch"
   },
   "husky": {
     "hooks": {
