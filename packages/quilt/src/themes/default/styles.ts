@@ -1,6 +1,6 @@
 // tslint:disable:variable-name
 import { css } from 'styled-components';
-import { colors, fonts, palette, sizes, spaces } from './utils';
+import { colors, fonts, palette, scale, spaces } from './utils';
 
 /**
  * Index and Quick Search:
@@ -550,36 +550,28 @@ const font_secondary = css`
 `;
 
 // 2.C Font Size
-const font_xxs = css`
-  font-size: ${sizes.xxs};
+const font_size_xs = css`
+  font-size: ${scale.xs};
 `;
 
-const font_xs = css`
-  font-size: ${sizes.xs};
+const font_size_sm = css`
+  font-size: ${scale.sm};
 `;
 
-const font_sm = css`
-  font-size: ${sizes.sm};
+const font_size_md = css`
+  font-size: ${scale.md};
 `;
 
-const font_md = css`
-  font-size: ${sizes.md};
+const font_size_lg = css`
+  font-size: ${scale.lg};
 `;
 
-const font_lg = css`
-  font-size: ${sizes.lg};
+const font_size_xl = css`
+  font-size: ${scale.xl};
 `;
 
-const font_xl = css`
-  font-size: ${sizes.xl};
-`;
-
-const font_xxl = css`
-  font-size: ${sizes.xxl};
-`;
-
-const font_xxxl = css`
-  font-size: ${sizes.xxxl};
+const font_size_xxl = css`
+  font-size: ${scale.xxl};
 `;
 
 // 2.D Font Weight
@@ -3133,14 +3125,12 @@ export {
   font_primary,
   font_secondary,
   // 2.C Font Family
-  font_xxs,
-  font_xs,
-  font_sm,
-  font_md,
-  font_lg,
-  font_xl,
-  font_xxl,
-  font_xxxl,
+  font_size_xs,
+  font_size_sm,
+  font_size_md,
+  font_size_lg,
+  font_size_xl,
+  font_size_xxl,
   // 2.D Font Family
   font_light,
   font_med,

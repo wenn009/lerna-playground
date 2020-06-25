@@ -3,7 +3,7 @@ import { H1Theme } from '../../components/H1/interface';
 import {
   font_light,
   font_primary,
-  font_xxxl,
+  font_size_xxl,
   mg_none,
   no_underline,
   text_color_default,
@@ -15,7 +15,7 @@ const H1Theme: H1Theme = {
   text: css`
     ${[
       font_primary,
-      font_xxxl,
+      font_size_xxl,
       font_light,
       mg_none,
       no_underline,

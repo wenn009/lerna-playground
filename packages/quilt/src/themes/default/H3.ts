@@ -3,7 +3,7 @@ import { H3Theme } from '../../components/H3/interface';
 import {
   font_light,
   font_primary,
-  font_xl,
+  font_size_lg,
   mg_none,
   no_underline,
   text_color_default,
@@ -15,7 +15,7 @@ const H3Theme: H3Theme = {
   text: css`
     ${[
       font_primary,
-      font_xl,
+      font_size_lg,
       font_light,
       mg_none,
       no_underline,

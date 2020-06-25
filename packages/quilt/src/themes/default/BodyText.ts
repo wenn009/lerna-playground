@@ -3,7 +3,7 @@ import { BodyTextTheme } from '../../components/BodyText/interface';
 import {
   font_med,
   font_primary,
-  font_sm,
+  font_size_sm,
   mg_none,
   no_underline,
   text_color_default,
@@ -15,7 +15,7 @@ const BodyTextTheme: BodyTextTheme = {
   text: css`
     ${[
       font_primary,
-      font_sm,
+      font_size_sm,
       font_med,
       mg_none,
       no_underline,

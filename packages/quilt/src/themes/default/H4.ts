@@ -1,9 +1,9 @@
 import { css } from 'styled-components';
 import { H4Theme } from '../../components/H4/interface';
 import {
-  font_lg,
   font_med,
   font_primary,
+  font_size_md,
   mg_none,
   no_underline,
   text_color_default,
@@ -15,7 +15,7 @@ const H4Theme: H4Theme = {
   text: css`
     ${[
       font_primary,
-      font_lg,
+      font_size_md,
       font_med,
       mg_none,
       no_underline,
