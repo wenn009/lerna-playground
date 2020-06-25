@@ -1,0 +1,32 @@
+---
+to: src/components/<%= h.changeCase.pascal(rawComponentName) %>/interface.ts
+---
+<% component = h.changeCase.pascal(rawComponentName) -%>
+import { StyledCss } from '../../theme/structures';
+import { H4Theme } from '../H4/interface';
+import { AnyProp } from '../QuiltComponent';
+import { TextTheme } from '../Text/interface';
+
+type <%= component %>Props = AnyProp & {
+  header?: string;
+  imgSrc?: string;
+  text?: string;
+};
+
+const default<%= component %>Props: Readonly<Pick<<%= component %>Props, 'imgSrc'>> = {
+  imgSrc: 'http://place-puppy.com/200x200',
+};
+
+type <%= component %>Theme = {
+  wrapper?: StyledCss;
+  content?: StyledCss;
+  image?: StyledCss;
+  header?: H4Theme;
+  text?: TextTheme;
+};
+
+export {
+  default<%= component %>Props,
+  <%= component %>Props,
+  <%= component %>Theme,
+};

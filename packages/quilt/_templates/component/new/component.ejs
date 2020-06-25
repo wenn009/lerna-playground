@@ -1,0 +1,42 @@
+---
+to: src/components/<%= h.changeCase.pascal(rawComponentName) %>/<%= h.changeCase.pascal(rawComponentName) %>.tsx
+---
+<% component = h.changeCase.pascal(rawComponentName) -%>
+import * as React from 'react';
+import { connect } from '../../connect';
+import { H4 } from '../H4/H4';
+import { createStyledComponents, QuiltComponent } from '../QuiltComponent';
+import { Text } from '../Text/Text';
+import {
+  <%= component %>Props,
+  <%= component %>Theme,
+  default<%= component %>Props,
+} from './interface';
+
+const styledComponents = createStyledComponents<<%= component %>Theme>({
+  Wrapper: ['div', 'wrapper'],
+  Content: ['div', 'content'],
+  Image: ['img', 'image'],
+});
+
+class <%= component %> extends QuiltComponent<<%= component %>Props, <%= component %>Theme> {
+  static defaultProps = default<%= component %>Props;
+  QUILT_NAME: string = '<%= component %>';
+
+  render() {
+    const { Content, Image, Wrapper } = styledComponents;
+    return (
+      <Wrapper {...this.qStyleProps}>
+        <Image src={this.props.imgSrc} {...this.qStyleProps} />
+        <Content {...this.qStyleProps}>
+          <H4 qExtend={this.qSelf.header}>{this.props.header}</H4>
+          <Text qExtend={this.qSelf.text}>{this.props.text}</Text>
+        </Content>
+      </Wrapper>
+    );
+  }
+}
+
+const connected<%= component %> = connect<<%= component %>Props, <%= component %>Theme>(<%= component %>);
+
+export { connected<%= component %> as <%= component %> };
