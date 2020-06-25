@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.3.0 (2020-06-25)
+
+
+### Features
+
+* part of classic Hello world ([d8c553b](https://github.com/Everettss/lerna-conventional-commits-example/commit/d8c553b2869b8a1f786c5cd0eae9b32f84bf75f5))
+
+
+
+
+
 # 1.2.0 (2020-06-25)
 
 
