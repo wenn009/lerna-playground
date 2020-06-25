@@ -4,6 +4,7 @@ import {
   createColorUtil,
   createFontUtil,
   createPaletteUtil,
+  createScaleUtil,
   createSizeUtil,
   createSpaceUtil,
 } from '../../theme/helpers';
@@ -11,6 +12,7 @@ import {
   IBreakpoints as IDefaultBreakpoints,
   IFonts as IDefaultFonts,
   IPalette as IDefaultPalette,
+  IScale as IDefaultScale,
   ISizes as IDefaultSizes,
   ISpaces as IDefaultSpaces,
   StyledCss,
@@ -35,6 +37,9 @@ const fontUtils: IDefaultFonts<ThemeGetterType> = createFontUtil<
 const paletteUtils: IDefaultPalette<ThemeGetterType> = createPaletteUtil<
   IDefaultPalette<string>
 >(palette);
+const scaleUtils: IDefaultScale<ThemeGetterType> = createScaleUtil<
+  IDefaultScale<string>
+>(sizes);
 const sizeUtils: IDefaultSizes<ThemeGetterType> = createSizeUtil<
   IDefaultSizes<string>
 >(sizes);
@@ -53,6 +58,7 @@ export {
   colorUtils as colors,
   fontUtils as fonts,
   paletteUtils as palette,
+  scaleUtils as scale,
   sizeUtils as sizes,
   spaceUtils as spaces,
   styles,

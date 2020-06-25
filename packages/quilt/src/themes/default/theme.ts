@@ -17,6 +17,7 @@ import { IconTheme } from './Icon';
 import { LinkTheme } from './Link';
 import { palette } from './palette';
 import { PrimaryButtonTheme } from './PrimaryButton';
+import { scale } from './scale';
 import { SecondaryButtonTheme } from './SecondaryButton';
 import { sizes } from './sizes';
 import { spaces } from './spaces';
@@ -46,6 +47,7 @@ const theme: IDefaultTheme = {
     colors,
     fonts,
     palette,
+    scale,
     sizes,
     spaces,
   },

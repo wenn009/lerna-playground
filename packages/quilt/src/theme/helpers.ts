@@ -1,12 +1,12 @@
 import {
   forEach,
   get,
+  isArray,
   isPlainObject,
   keys,
   memoize,
   merge,
   mergeWith,
-  isArray,
 } from 'lodash';
 import { ThemedStyledFunction } from 'styled-components';
 import { ITheme, ThemeGetterType } from './structures';
@@ -61,6 +61,10 @@ function createColorUtil<S extends object>(colors: S): SingleLevelUtilType<S> {
 
 function createFontUtil<S extends object>(fonts: S): SingleLevelUtilType<S> {
   return createSingleLevelUtil<S>('core.fonts', fonts);
+}
+
+function createScaleUtil<S extends object>(scale: S): SingleLevelUtilType<S> {
+  return createSingleLevelUtil<S>('core.scale', scale);
 }
 
 function createSizeUtil<S extends object>(sizes: S): SingleLevelUtilType<S> {
@@ -131,6 +135,7 @@ export {
   createColorUtil,
   createFontUtil,
   createPaletteUtil,
+  createScaleUtil,
   createSizeUtil,
   createSpaceUtil,
   extendTheme,
