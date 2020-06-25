@@ -1,6 +1,5 @@
-import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { quilt } from '../../../dist';
+import { quilt } from '../../dist';
 import {
   bg_primary,
   bg_primary_light,
@@ -8,7 +7,7 @@ import {
   bg_secondary_complement,
   bg_secondary_light,
   pd_xxl,
-} from '../../../dist/themes/default/styles';
+} from '../../dist/themes/default/styles';
 
 const ThemePrimarySwatch = quilt.div`
   ${[bg_primary, pd_xxl]}
@@ -26,7 +25,10 @@ const ThemeSecondaryComplementSwatch = quilt.div`
   ${[bg_secondary_complement, pd_xxl]}
 `;
 
-storiesOf('StyledComponents', module).add('Examples', () => (
+// tslint:disable-next-line: no-default-export
+export default { title: 'Styled' };
+
+export const Swatches = () => (
   <>
     <ThemePrimarySwatch />
     <ThemePrimaryLightSwatch />
@@ -34,4 +36,4 @@ storiesOf('StyledComponents', module).add('Examples', () => (
     <ThemeSecondaryLightSwatch />
     <ThemeSecondaryComplementSwatch />
   </>
-));
+);

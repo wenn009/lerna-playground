@@ -8,8 +8,8 @@ import {
   PrimaryButton,
   SecondaryButton,
   TertiaryButton,
-} from '../../dist';
-import { colors, palette } from '../../dist/themes/default/utils';
+} from '../../../dist';
+import { colors, palette } from '../../../dist/themes/default/utils';
 
 storiesOf('Buttons', module)
   .addDecorator(withKnobs)
