@@ -9,7 +9,6 @@ import {
   text_color_default,
   text_left,
 } from './styles';
-import { sizes } from './utils';
 
 const H2Theme: H2Theme = {
   text: css`
@@ -22,8 +21,6 @@ const H2Theme: H2Theme = {
       text_color_default,
       text_left,
     ]}
-    line-height: calc(${sizes.xxl} + 6px);
-    letter-spacing: 0.014em;
   `,
 };
 

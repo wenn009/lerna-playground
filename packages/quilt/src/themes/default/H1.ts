@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import { H1Theme } from '../../components/H1/interface';
 import {
-  font_light,
+  font_bold,
   font_primary,
   font_size_xxl,
   mg_none,
@@ -9,21 +9,18 @@ import {
   text_color_default,
   text_left,
 } from './styles';
-import { sizes } from './utils';
 
 const H1Theme: H1Theme = {
   text: css`
     ${[
       font_primary,
       font_size_xxl,
-      font_light,
+      font_bold,
       mg_none,
       no_underline,
       text_color_default,
       text_left,
     ]}
-    line-height: calc(${sizes.xxxl} + 6px);
-    letter-spacing: 0.014em;
   `,
 };
 

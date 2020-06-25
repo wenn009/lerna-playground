@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import { H6Theme } from '../../components/H6/interface';
 import {
-  font_med,
+  font_bold,
   font_primary,
   font_size_xs,
   mg_none,
@@ -9,21 +9,18 @@ import {
   text_color_default,
   text_left,
 } from './styles';
-import { sizes } from './utils';
 
 const H6Theme: H6Theme = {
   text: css`
     ${[
       font_primary,
       font_size_xs,
-      font_med,
+      font_bold,
       text_color_default,
       mg_none,
       no_underline,
       text_left,
     ]}
-    line-height: calc(${sizes.sm} + 6px);
-    letter-spacing: 0.014em;
   `,
 };
 
