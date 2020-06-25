@@ -2,12 +2,12 @@ import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import {
+  BodyText,
   Container,
   ContainerCol,
   ContainerRow,
   ContainerRowBreak,
   css,
-  Label,
 } from '../../dist';
 import {
   bg_secondary,
@@ -55,9 +55,9 @@ const DemoContainerCol = (props) => {
 
 const DemoLabel = (props) => {
   return (
-    <Label {...props} qExtend={[bg_secondary, pd_top_sm, pd_bottom_sm]}>
+    <BodyText {...props} qExtend={[bg_secondary, pd_top_sm, pd_bottom_sm]}>
       {props.children}
-    </Label>
+    </BodyText>
   );
 };
 
