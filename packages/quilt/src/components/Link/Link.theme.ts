@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { LinkTheme } from '../../components/Link/interface';
 import {
   bg_transparent,
   border_none,
@@ -23,7 +22,8 @@ import {
   text_color_secondary,
   whitespace_no_wrap,
   width_full,
-} from './styles';
+} from '../../themes/default/styles';
+import { LinkTheme } from './interface';
 
 const LinkTheme: LinkTheme = {
   wrapper: css`

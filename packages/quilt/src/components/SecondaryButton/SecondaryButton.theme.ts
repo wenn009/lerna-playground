@@ -1,9 +1,11 @@
 import { css } from 'styled-components';
-import { TertiaryButtonTheme } from '../../components/TertiaryButton/interface';
 import {
+  bg_secondary,
+  bg_secondary_light,
   bg_white,
   border_1,
-  border_stone,
+  border_secondary,
+  border_secondary_light,
   cursor_not_allowed,
   cursor_pointer,
   flex_grow,
@@ -19,16 +21,18 @@ import {
   pd_top_xxs,
   rounded,
   text_color_secondary,
+  text_color_white,
   truncate,
   whitespace_no_wrap,
-} from './styles';
+} from '../../themes/default/styles';
+import { SecondaryButtonTheme } from './interface';
 
-const TertiaryButtonTheme: TertiaryButtonTheme = {
+const SecondaryButtonTheme: SecondaryButtonTheme = {
   wrapper: css`
     ${[
       bg_white,
       border_1,
-      border_stone,
+      border_secondary,
       cursor_pointer,
       flex_grow,
       inline_flex,
@@ -44,19 +48,27 @@ const TertiaryButtonTheme: TertiaryButtonTheme = {
       whitespace_no_wrap,
     ]}
 
+    &:not(:disabled):hover {
+      ${bg_secondary}
+    }
+
+    &:not(:disabled):focus {
+      ${[bg_secondary_light, border_secondary_light]}
+    }
+
     &:disabled {
       ${[cursor_not_allowed, opacity_50]};
     }
   `,
   text: {
     text: css`
-      ${truncate}
+      ${[text_color_secondary, truncate]}
 
       button:not(:disabled):hover > &, button:not(:disabled):focus > & {
-        ${text_color_secondary}
+        ${text_color_white}
       }
     `,
   },
 };
 
-export { TertiaryButtonTheme };
+export { SecondaryButtonTheme };

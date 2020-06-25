@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
-import { ContainerRowBreakTheme } from '../../components/Container/interface';
-import { width_full } from './styles';
+import { width_full } from '../../themes/default/styles';
+import { ContainerRowBreakTheme } from './interface';
 
 const ContainerRowBreakTheme: ContainerRowBreakTheme = {
   wrapper: css`

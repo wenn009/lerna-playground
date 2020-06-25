@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { PrimaryButtonTheme } from '../../components/PrimaryButton/interface';
 import {
   bg_secondary,
   bg_secondary_light,
@@ -21,7 +20,8 @@ import {
   text_color_white,
   truncate,
   whitespace_no_wrap,
-} from './styles';
+} from '../../themes/default/styles';
+import { PrimaryButtonTheme } from './interface';
 
 const PrimaryButtonTheme: PrimaryButtonTheme = {
   wrapper: css`

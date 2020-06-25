@@ -1,20 +1,20 @@
 import { css } from 'styled-components';
-import { H3Theme } from '../../components/H3/interface';
 import {
   font_bold,
   font_primary,
-  font_size_lg,
+  font_size_sm,
   mg_none,
   no_underline,
   text_color_default,
   text_left,
-} from './styles';
+} from '../../themes/default/styles';
+import { H5Theme } from './interface';
 
-const H3Theme: H3Theme = {
+const H5Theme: H5Theme = {
   text: css`
     ${[
       font_primary,
-      font_size_lg,
+      font_size_sm,
       font_bold,
       mg_none,
       no_underline,
@@ -24,4 +24,4 @@ const H3Theme: H3Theme = {
   `,
 };
 
-export { H3Theme };
+export { H5Theme };

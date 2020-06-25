@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { ContainerColTheme } from '../../components/Container/interface';
 import {
   border_box,
   flex,
@@ -13,7 +12,8 @@ import {
   pd_right_xs,
   pos_relative,
   width_auto,
-} from './styles';
+} from '../../themes/default/styles';
+import { ContainerColTheme } from './interface';
 
 const ContainerColTheme: ContainerColTheme = {
   wrapper: css`

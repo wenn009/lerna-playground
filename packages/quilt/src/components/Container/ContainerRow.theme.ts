@@ -1,13 +1,13 @@
 import { css } from 'styled-components';
-import { ContainerRowTheme } from '../../components/Container/interface';
 import {
   border_box,
   flex,
   flex_wrap,
   mg_left_none,
   mg_right_none,
-} from './styles';
-import { spaces } from './utils';
+} from '../../themes/default/styles';
+import { spaces } from '../../themes/default/utils';
+import { ContainerRowTheme } from './interface';
 
 const ContainerRowTheme: ContainerRowTheme = {
   wrapper: css`

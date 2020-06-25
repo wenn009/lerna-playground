@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
-import { IconTheme } from '../../components/Icon/interface';
-import { inline_block, leading_none } from './styles';
-import { sizes } from './utils';
+import { inline_block, leading_none } from '../../themes/default/styles';
+import { sizes } from '../../themes/default/utils';
+import { IconTheme } from './interface';
 
 const IconTheme: IconTheme = {
   wrapper: [inline_block, leading_none],

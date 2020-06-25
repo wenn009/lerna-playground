@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { H4Theme } from '../../components/H4/interface';
 import {
   font_bold,
   font_primary,
@@ -8,7 +7,8 @@ import {
   no_underline,
   text_color_default,
   text_left,
-} from './styles';
+} from '../../themes/default/styles';
+import { H4Theme } from './interface';
 
 const H4Theme: H4Theme = {
   text: css`

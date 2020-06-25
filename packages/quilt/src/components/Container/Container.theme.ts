@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { ContainerTheme } from '../../components/Container/interface';
 import {
   border_box,
   mg_left_auto,
@@ -7,7 +6,8 @@ import {
   pd_left_xs,
   pd_right_xs,
   width_full,
-} from './styles';
+} from '../../themes/default/styles';
+import { ContainerTheme } from './interface';
 
 const ContainerTheme: ContainerTheme = {
   wrapper: css`
