@@ -60,11 +60,11 @@ This command essentially does the following:
 
 1. Install all packages (equivalent to running `npm install`)
 2. Builds and watches the source code (equivalent to running `npm run dev:ts`)
-3. Build the docz and storybook documentation then watches for updates (equivalent to running `npm run dev:documentation`)
+3. Build storybook documentation then watches for updates (equivalent to running `npm run dev:storybook`)
 
 If all packages are already installed it should take less than 30 seconds for things to be up and running.
 
-The docz and storybook documentation are served from <http://localhost:3000> and <http://localhost:9001> respectively.
+The storybook documentation is served from <http://localhost:9001> by default.
 
 If you know what you're doing then can run things separately and reference the numerous commands available in the `package.json`, many of which just call other smaller commands. Feel free to look through those and use them for your particular use case.
 
