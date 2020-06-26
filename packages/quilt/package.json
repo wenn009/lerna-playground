@@ -1,12 +1,15 @@
 {
   "name": "@foursquare/quilt",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "React Components that implement Foursquare's Design",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/foursquare/web-packages.git",
   "author": "Steven Lam <Stevo14850@gmail.com>",
   "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://foursquaredev.jfrog.io/foursquaredev/api/npm/npm/"
+  },
   "files": [
     "dist"
   ],

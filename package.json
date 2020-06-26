@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
-    "publish": "lerna publish --registry http://localhost:4873"
+    "publish": "lerna publish"
   },
   "commitlint": {
     "extends": [
