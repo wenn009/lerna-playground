@@ -2,6 +2,9 @@
   "name": "@foursquare/configs",
   "version": "0.0.1",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://foursquaredev.jfrog.io/foursquaredev/api/npm/npm/"
+  },
   "dependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",

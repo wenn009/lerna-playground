@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
-    "publish": "lerna publish --registry https://foursquaredev.jfrog.io/foursquaredev/api/npm/npm/"
+    "publish": "lerna publish"
   },
   "commitlint": {
     "extends": [
