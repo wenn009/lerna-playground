@@ -1,81 +1,46 @@
-import { AColors, IColors, StructureValueType } from '../../theme/structures';
+import { IColors as IDefaultColors } from '../../theme/structures';
 
-interface IDefaultColors<T extends StructureValueType> extends IColors<T> {
-  blue: T;
-  cornflower: T;
-  foundation: T;
-  lilac: T;
-  perfume: T;
-  moment: T;
-  portage: T;
-  royal: T;
-  cerulean: T;
-  jackson: T;
-  quantum: T;
-  shiva: T;
-  celestial: T;
-  macaroni: T;
-  lemon: T;
-  tangerine: T;
-  pomegranate: T;
-  apple: T;
-  white: T;
-  doctor: T;
-  cultured: T;
-  bonjour: T;
-  nobel: T;
-  pewter: T;
-  frost: T;
-  fedora: T;
-  scorpion: T;
-  panther: T;
-  thunder: T;
-  jet: T;
-}
-
-class Colors extends AColors implements IDefaultColors<string> {
+const colors: IDefaultColors<string> = {
   // PRIMARY
-  blue: string = '#3333FF';
-  cornflower: string = '#686DF3';
+  blue: '#3333FF',
+  cornflower: '#686DF3',
 
   // SECONDARY
-  foundation: string = '#F2EEFB';
-  lilac: string = '#E6DDF8';
-  perfume: string = '#CBB8F7';
-  moment: string = '#AA9EF6';
-  portage: string = '#8A84F4';
-  royal: string = '#4250E0';
-  cerulean: string = '#2932C9';
-  jackson: string = '#1C209E';
-  quantum: string = '#0E0E76';
+  foundation: '#F2EEFB',
+  lilac: '#E6DDF8',
+  perfume: '#CBB8F7',
+  moment: '#AA9EF6',
+  portage: '#8A84F4',
+  royal: '#4250E0',
+  cerulean: '#2932C9',
+  jackson: '#1C209E',
+  quantum: '#0E0E76',
 
   // TERTIARY
-  shiva: string = '#97DAF8';
-  celestial: string = '#2ED9C3';
-  macaroni: string = '#FFC27A';
+  shiva: '#97DAF8',
+  celestial: '#2ED9C3',
+  macaroni: '#FFC27A',
 
   // UTILITY
-  lemon: string = '#FCCC0A';
-  tangerine: string = '#FB7421';
-  pomegranate: string = '#EE352E';
-  apple: string = '#389E45';
+  lemon: '#FCCC0A',
+  tangerine: '#FB7421',
+  pomegranate: '#EE352E',
+  apple: '#389E45',
 
   // GREYSCALE
-  white: string = '#FFFFFF';
-  doctor: string = '#FAF8F8';
-  cultured: string = '#F7F4F4';
-  bonjour: string = '#E0DDDE';
-  nobel: string = '#B3B0B1';
-  pewter: string = '#9C999A';
-  frost: string = '#868384';
-  fedora: string = '#726F71';
-  scorpion: string = '#5B585A';
-  panther: string = '#444144';
-  thunder: string = '#2E2B2D';
-  jet: string = '#171417';
-  black: string = '#000000';
-}
-
-const colors = new Colors();
+  white: '#FFFFFF',
+  doctor: '#FAF8F8',
+  cultured: '#F7F4F4',
+  bonjour: '#E0DDDE',
+  nobel: '#B3B0B1',
+  pewter: '#9C999A',
+  frost: '#868384',
+  fedora: '#726F71',
+  scorpion: '#5B585A',
+  panther: '#444144',
+  thunder: '#2E2B2D',
+  jet: '#171417',
+  black: '#000000',
+};
 
 export { colors, IDefaultColors };

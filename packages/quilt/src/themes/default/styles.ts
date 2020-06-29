@@ -770,12 +770,8 @@ const z_auto = css`
 
 // 2. Typography
 // 2.A Font Family
-const font_primary = css`
-  font-family: ${fonts.primary};
-`;
-
-const font_secondary = css`
-  font-family: ${fonts.secondary};
+const font_default = css`
+  font-family: ${fonts.default};
 `;
 
 // 2.B Font Size
@@ -2701,8 +2697,7 @@ export {
   z_50,
   z_auto,
   // 2.A Font Family
-  font_primary,
-  font_secondary,
+  font_default,
   // 2.B Font Family
   font_size_xs,
   font_size_sm,

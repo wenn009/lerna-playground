@@ -19,7 +19,6 @@ import { H6Theme } from '../components/H6/interface';
 import { IconTheme } from '../components/Icon/interface';
 import { LinkTheme } from '../components/Link/interface';
 import { QuiltComponentProps } from '../components/QuiltComponent';
-import { OpenColor } from './openColor';
 
 type ThemeGetterType = (props: { qGlobal: object }) => string;
 type StructureValueType = string | ThemeGetterType;
@@ -46,10 +45,6 @@ interface IBreakpoints<T extends StructureValueType> {
 
 interface IColors<T extends StructureValueType> {
   [color: string]: T;
-}
-
-abstract class AColors extends OpenColor implements IColors<string> {
-  [color: string]: string;
 }
 
 interface IPalette<T extends StructureValueType> {
@@ -132,8 +127,7 @@ interface ISpaces<T extends StructureValueType> {
 }
 
 interface IFonts<T extends StructureValueType> {
-  primary: T;
-  secondary: T;
+  default: T;
 }
 
 interface ITheme {
@@ -186,7 +180,6 @@ type StyledCss =
   | Array<FlattenInterpolation<ThemeProps<any>>>;
 
 export {
-  AColors,
   ComponentThemes,
   ComponentThemeValue,
   cssType,

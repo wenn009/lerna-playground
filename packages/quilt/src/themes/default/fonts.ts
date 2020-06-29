@@ -4,13 +4,11 @@ import { IFonts } from '../../theme/structures';
 // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 
 const fontStack: string = `-apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif`;
+    "Segoe UI", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"`;
 
 const fonts: IFonts<string> = {
-  primary: `'Roboto', ${fontStack}`,
-  secondary: `'Roboto', ${fontStack}`,
+  default: `${fontStack}`,
 };
 
 export { fonts };
