@@ -2,9 +2,6 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
 import { BodyText, H1, H2, H3, H4, H5, H6 } from '../../dist';
 
-// tslint:disable-next-line: no-default-export
-export default { title: 'Text', decorators: [withKnobs] };
-
 export const All = () => (
   <>
     <H1>{text('H1', 'Heading 1')}</H1>
@@ -16,3 +13,6 @@ export const All = () => (
     <BodyText>{text('BodyText', 'BodyText')}</BodyText>
   </>
 );
+
+// tslint:disable-next-line: no-default-export
+export default { title: 'Text', decorators: [withKnobs] };

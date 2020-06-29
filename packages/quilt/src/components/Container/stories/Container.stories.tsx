@@ -126,8 +126,6 @@ function createColumnKnobs(label: string) {
     ),
   };
 }
-// tslint:disable-next-line: no-default-export
-export default { title: 'Grid', decorators: [withKnobs] };
 
 export const Grid = () => (
   <DemoContainer>
@@ -271,3 +269,6 @@ export const Grid = () => (
     </DemoContainerRow>
   </DemoContainer>
 );
+
+// tslint:disable-next-line: no-default-export
+export default { title: 'Grid', decorators: [withKnobs] };

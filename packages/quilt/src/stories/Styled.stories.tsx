@@ -25,9 +25,6 @@ const ThemeSecondaryComplementSwatch = quilt.div`
   ${[bg_secondary_complement, pd_xxl]}
 `;
 
-// tslint:disable-next-line: no-default-export
-export default { title: 'Styled' };
-
 export const Swatches = () => (
   <>
     <ThemePrimarySwatch />
@@ -37,3 +34,6 @@ export const Swatches = () => (
     <ThemeSecondaryComplementSwatch />
   </>
 );
+
+// tslint:disable-next-line: no-default-export
+export default { title: 'Styled' };
