@@ -66,7 +66,7 @@ function createColumnKnobs(label: string) {
     offset: select(
       `offset (${label})`,
       {
-        undefined: null,
+        undefined,
         1: 1,
         2: 2,
         3: 3,
@@ -79,13 +79,13 @@ function createColumnKnobs(label: string) {
         10: 10,
         11: 11,
       },
-      null,
+      undefined,
       groupId
     ),
     order: select(
       `order (${label})`,
       {
-        undefined: null,
+        undefined,
         first: 'first',
         last: 'last',
         1: 1,
@@ -101,13 +101,13 @@ function createColumnKnobs(label: string) {
         11: 11,
         12: 12,
       },
-      null,
+      undefined,
       groupId
     ),
     size: select(
       `size (${label})`,
       {
-        undefined: null,
+        undefined,
         1: 1,
         2: 2,
         3: 3,
@@ -121,7 +121,7 @@ function createColumnKnobs(label: string) {
         11: 11,
         12: 12,
       },
-      null,
+      undefined,
       groupId
     ),
   };
