@@ -22,9 +22,6 @@ export * from './components/H5/H5';
 export * from './components/H6/H6';
 export * from './components/Icon/Icon';
 export * from './components/Link/Link';
-export * from './components/PrimaryButton/PrimaryButton';
-export * from './components/SecondaryButton/SecondaryButton';
-export * from './components/TertiaryButton/TertiaryButton';
 
 export * from './DefaultTheme';
 

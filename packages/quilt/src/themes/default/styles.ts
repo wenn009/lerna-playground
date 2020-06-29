@@ -1,6 +1,6 @@
 // tslint:disable:variable-name
 import { css } from 'styled-components';
-import { colors, fonts, palette, scale, spaces } from './utils';
+import { fonts, palette, scale, spaces } from './utils';
 
 /**
  * Index and Quick Search:
@@ -21,30 +21,27 @@ import { colors, fonts, palette, scale, spaces } from './utils';
  * 1.H Z-Index
  *
  * 2. Typography
- * 2.A Color
- * 2.B Font Family
- * 2.C Font Size
- * 2.D Font Weight
- * 2.E Letter Spacing
- * 2.F Line Height
- * 2.G Lists
- * 2.H Style & Decoration
- * 2.I Text Alignment
- * 2.J Vertical Alignment
- * 2.K Whitespace & Wrapping
+ * 2.A Font Family
+ * 2.B Font Size
+ * 2.C Font Weight
+ * 2.D Letter Spacing
+ * 2.E Line Height
+ * 2.F Lists
+ * 2.G Style & Decoration
+ * 2.H Text Alignment
+ * 2.I Vertical Alignment
+ * 2.J Whitespace & Wrapping
  *
  * 3. Backgrounds
  * 3.A Background Attachment
- * 3.B Background Color
- * 3.C Background Position
- * 3.D Background Repeat
- * 3.E Background Size
+ * 3.B Background Position
+ * 3.C Background Repeat
+ * 3.D Background Size
  *
  * 4. Borders
- * 4.A Border Color
- * 4.B Border Style
- * 4.C Border Width
- * 4.D Border Radius
+ * 4.A Border Style
+ * 4.B Border Width
+ * 4.C Border Radius
  *
  * 5. Flexbox
  * 5.A Flex Direction
@@ -85,12 +82,12 @@ import { colors, fonts, palette, scale, spaces } from './utils';
 // 0. Custom
 
 // 0.1 Color
-const text_color_default = css`
-  color: ${palette.text.default};
+const text_color_transparent = css`
+  color: transparent;
 `;
 
-const text_color_muted = css`
-  color: ${palette.text.muted};
+const text_color_default = css`
+  color: ${palette.secondary.scale_6};
 `;
 
 const text_color_primary = css`
@@ -101,156 +98,393 @@ const text_color_primary_light = css`
   color: ${palette.primary.light};
 `;
 
-const text_color_secondary = css`
-  color: ${palette.secondary.main};
+const text_color_secondary_1 = css`
+  color: ${palette.secondary.scale_1};
 `;
 
-const text_color_secondary_light = css`
-  color: ${palette.secondary.light};
+const text_color_secondary_2 = css`
+  color: ${palette.secondary.scale_2};
 `;
 
-const text_color_secondary_complement = css`
-  color: ${palette.secondary.complement};
+const text_color_secondary_3 = css`
+  color: ${palette.secondary.scale_3};
 `;
 
-const text_color_charcoal = css`
-  color: ${colors.charcoal};
+const text_color_secondary_4 = css`
+  color: ${palette.secondary.scale_4};
 `;
-const text_color_slate = css`
-  color: ${colors.slate};
+
+const text_color_secondary_5 = css`
+  color: ${palette.secondary.scale_5};
 `;
-const text_color_stone = css`
-  color: ${colors.stone};
+
+const text_color_secondary_6 = css`
+  color: ${palette.secondary.scale_6};
 `;
-const text_color_fog = css`
-  color: ${colors.fog};
+
+const text_color_secondary_7 = css`
+  color: ${palette.secondary.scale_7};
 `;
-const text_color_whiteSmoke = css`
-  color: ${colors.whiteSmoke};
+
+const text_color_secondary_8 = css`
+  color: ${palette.secondary.scale_8};
 `;
+
+const text_color_secondary_9 = css`
+  color: ${palette.secondary.scale_9};
+`;
+
+const text_color_secondary_10 = css`
+  color: ${palette.secondary.scale_10};
+`;
+
+const text_color_tertiary_light = css`
+  color: ${palette.tertiary.light};
+`;
+
+const text_color_tertiary_dark = css`
+  color: ${palette.tertiary.dark};
+`;
+
+const text_color_tertiary_complement = css`
+  color: ${palette.tertiary.complement};
+`;
+
+const text_color_utility_light = css`
+  color: ${palette.utility.light};
+`;
+
+const text_color_utility_medium = css`
+  color: ${palette.utility.medium};
+`;
+
+const text_color_utility_dark = css`
+  color: ${palette.utility.dark};
+`;
+
+const text_color_utility_complement = css`
+  color: ${palette.utility.complement};
+`;
+
 const text_color_white = css`
-  color: ${colors.white};
+  color: ${palette.greyscale.white};
 `;
-const text_color_white_25 = css`
-  color: ${colors.white}40;
+
+const text_color_greyscale_1 = css`
+  color: ${palette.greyscale.scale_1};
 `;
-const text_color_white_50 = css`
-  color: ${colors.white}80;
+
+const text_color_greyscale_2 = css`
+  color: ${palette.greyscale.scale_2};
 `;
-const text_color_white_75 = css`
-  color: ${colors.white}BF;
+
+const text_color_greyscale_3 = css`
+  color: ${palette.greyscale.scale_3};
+`;
+
+const text_color_greyscale_4 = css`
+  color: ${palette.greyscale.scale_4};
+`;
+
+const text_color_greyscale_5 = css`
+  color: ${palette.greyscale.scale_5};
+`;
+
+const text_color_greyscale_6 = css`
+  color: ${palette.greyscale.scale_6};
+`;
+
+const text_color_greyscale_7 = css`
+  color: ${palette.greyscale.scale_7};
+`;
+
+const text_color_greyscale_8 = css`
+  color: ${palette.greyscale.scale_8};
+`;
+
+const text_color_greyscale_9 = css`
+  color: ${palette.greyscale.scale_9};
+`;
+
+const text_color_greyscale_10 = css`
+  color: ${palette.greyscale.scale_10};
+`;
+
+const text_color_greyscale_11 = css`
+  color: ${palette.greyscale.scale_11};
+`;
+
+const text_color_black = css`
+  color: ${palette.greyscale.black};
 `;
 
 // 0.2 Background Color
-
-const bg_default = css`
-  background-color: ${palette.text.default};
-`;
-
 const bg_none = css`
   background-color: none;
 `;
 
-const bg_muted = css`
-  background-color: ${palette.text.muted};
+const bg_transparent = css`
+  background-color: transparent;
 `;
 
 const bg_primary = css`
   background-color: ${palette.primary.main};
 `;
 
-const bg_primary_25 = css`
-  background-color: ${palette.primary.main}40;
-`;
-
-const bg_primary_50 = css`
-  background-color: ${palette.primary.main}80;
-`;
-
-const bg_primary_75 = css`
-  background-color: ${palette.primary.main}BF;
-`;
-
 const bg_primary_light = css`
   background-color: ${palette.primary.light};
 `;
 
-const bg_secondary = css`
-  background-color: ${palette.secondary.main};
+const bg_secondary_scale_1 = css`
+  background-color: ${palette.secondary.scale_1};
 `;
 
-const bg_secondary_light = css`
-  background-color: ${palette.secondary.light};
+const bg_secondary_scale_2 = css`
+  background-color: ${palette.secondary.scale_2};
 `;
 
-const bg_secondary_complement = css`
-  background-color: ${palette.secondary.complement};
+const bg_secondary_scale_3 = css`
+  background-color: ${palette.secondary.scale_3};
 `;
 
-const bg_charcoal = css`
-  background-color: ${colors.charcoal};
+const bg_secondary_scale_4 = css`
+  background-color: ${palette.secondary.scale_4};
 `;
 
-const bg_slate = css`
-  background-color: ${colors.slate};
+const bg_secondary_scale_5 = css`
+  background-color: ${palette.secondary.scale_5};
 `;
 
-const bg_stone = css`
-  background-color: ${colors.stone};
+const bg_secondary_scale_6 = css`
+  background-color: ${palette.secondary.scale_6};
 `;
 
-const bg_fog = css`
-  background-color: ${colors.fog};
+const bg_secondary_scale_7 = css`
+  background-color: ${palette.secondary.scale_7};
 `;
 
-const bg_fog_25 = css`
-  background-color: ${colors.fog}40;
+const bg_secondary_scale_8 = css`
+  background-color: ${palette.secondary.scale_8};
 `;
 
-const bg_fog_50 = css`
-  background-color: ${colors.fog}80;
+const bg_secondary_scale_9 = css`
+  background-color: ${palette.secondary.scale_9};
 `;
 
-const bg_fog_75 = css`
-  background-color: ${colors.fog}BF;
+const bg_secondary_scale_10 = css`
+  background-color: ${palette.secondary.scale_10};
 `;
 
-const bg_whiteSmoke = css`
-  background-color: ${colors.whiteSmoke};
+const bg_tertiary_light = css`
+  background-color: ${palette.tertiary.light};
 `;
 
-const bg_blackHaze = css`
-  background-color: ${colors.blackHaze};
+const bg_tertiary_dark = css`
+  background-color: ${palette.tertiary.dark};
 `;
 
-const bg_overlay = css`
-  background: ${palette.overlay.default};
+const bg_tertiary_complement = css`
+  background-color: ${palette.tertiary.complement};
+`;
+
+const bg_utility_light = css`
+  background-color: ${palette.utility.light};
+`;
+
+const bg_utility_medium = css`
+  background-color: ${palette.utility.medium};
+`;
+
+const bg_utility_dark = css`
+  background-color: ${palette.utility.dark};
+`;
+
+const bg_utility_complement = css`
+  background-color: ${palette.utility.complement};
+`;
+
+const bg_white = css`
+  background-color: ${palette.greyscale.white};
+`;
+
+const bg_greyscale_1 = css`
+  background-color: ${palette.greyscale.scale_1};
+`;
+
+const bg_greyscale_2 = css`
+  background-color: ${palette.greyscale.scale_2};
+`;
+
+const bg_greyscale_3 = css`
+  background-color: ${palette.greyscale.scale_3};
+`;
+
+const bg_greyscale_4 = css`
+  background-color: ${palette.greyscale.scale_4};
+`;
+
+const bg_greyscale_5 = css`
+  background-color: ${palette.greyscale.scale_5};
+`;
+
+const bg_greyscale_6 = css`
+  background-color: ${palette.greyscale.scale_6};
+`;
+
+const bg_greyscale_7 = css`
+  background-color: ${palette.greyscale.scale_7};
+`;
+
+const bg_greyscale_8 = css`
+  background-color: ${palette.greyscale.scale_8};
+`;
+
+const bg_greyscale_9 = css`
+  background-color: ${palette.greyscale.scale_9};
+`;
+
+const bg_greyscale_10 = css`
+  background-color: ${palette.greyscale.scale_10};
+`;
+
+const bg_greyscale_11 = css`
+  background-color: ${palette.greyscale.scale_11};
 `;
 
 // 0.3 Border Color
-
-const border_fog = css`
-  border-color: ${colors.fog};
+const border_transparent = css`
+  border-color: transparent;
 `;
 
-const border_slate = css`
-  border-color: ${colors.slate};
+const border_primary = css`
+  border-color: ${palette.primary.main};
 `;
 
-const border_stone = css`
-  border-color: ${colors.stone};
+const border_primary_light = css`
+  border-color: ${palette.primary.light};
 `;
 
-const border_whiteSmoke = css`
-  border-color: ${colors.whiteSmoke};
+const border_secondary_1 = css`
+  border-color: ${palette.secondary.scale_1};
 `;
 
-const border_blackHaze = css`
-  border-color: ${colors.blackHaze};
+const border_secondary_2 = css`
+  border-color: ${palette.secondary.scale_2};
+`;
+
+const border_secondary_3 = css`
+  border-color: ${palette.secondary.scale_3};
+`;
+
+const border_secondary_4 = css`
+  border-color: ${palette.secondary.scale_4};
+`;
+
+const border_secondary_5 = css`
+  border-color: ${palette.secondary.scale_5};
+`;
+
+const border_secondary_6 = css`
+  border-color: ${palette.secondary.scale_6};
+`;
+
+const border_secondary_7 = css`
+  border-color: ${palette.secondary.scale_7};
+`;
+
+const border_secondary_8 = css`
+  border-color: ${palette.secondary.scale_8};
+`;
+
+const border_secondary_9 = css`
+  border-color: ${palette.secondary.scale_9};
+`;
+
+const border_secondary_10 = css`
+  border-color: ${palette.secondary.scale_10};
+`;
+
+const border_tertiary_light = css`
+  border-color: ${palette.tertiary.light};
+`;
+
+const border_tertiary_dark = css`
+  border-color: ${palette.tertiary.dark};
+`;
+
+const border_tertiary_complement = css`
+  border-color: ${palette.tertiary.complement};
+`;
+
+const border_utility_light = css`
+  border-color: ${palette.utility.light};
+`;
+
+const border_utility_medium = css`
+  border-color: ${palette.utility.medium};
+`;
+
+const border_utility_dark = css`
+  border-color: ${palette.utility.dark};
+`;
+
+const border_utility_complement = css`
+  border-color: ${palette.utility.complement};
+`;
+
+const border_white = css`
+  border-color: ${palette.greyscale.white};
+`;
+
+const border_greyscale_1 = css`
+  border-color: ${palette.greyscale.scale_1};
+`;
+
+const border_greyscale_2 = css`
+  border-color: ${palette.greyscale.scale_2};
+`;
+
+const border_greyscale_3 = css`
+  border-color: ${palette.greyscale.scale_3};
+`;
+
+const border_greyscale_4 = css`
+  border-color: ${palette.greyscale.scale_4};
+`;
+
+const border_greyscale_5 = css`
+  border-color: ${palette.greyscale.scale_5};
+`;
+
+const border_greyscale_6 = css`
+  border-color: ${palette.greyscale.scale_6};
+`;
+
+const border_greyscale_7 = css`
+  border-color: ${palette.greyscale.scale_7};
+`;
+
+const border_greyscale_8 = css`
+  border-color: ${palette.greyscale.scale_8};
+`;
+
+const border_greyscale_9 = css`
+  border-color: ${palette.greyscale.scale_9};
+`;
+
+const border_greyscale_10 = css`
+  border-color: ${palette.greyscale.scale_10};
+`;
+
+const border_greyscale_11 = css`
+  border-color: ${palette.greyscale.scale_11};
+`;
+
+const border_black = css`
+  border-color: ${palette.greyscale.black};
 `;
 
 // 0.4 Other
-
 const content_box = css`
   box-sizing: content-box;
 `;
@@ -535,12 +769,7 @@ const z_auto = css`
 `;
 
 // 2. Typography
-// 2.A Color
-const text_color_transparent = css`
-  color: transparent;
-`;
-
-// 2.B Font Family
+// 2.A Font Family
 const font_primary = css`
   font-family: ${fonts.primary};
 `;
@@ -549,7 +778,7 @@ const font_secondary = css`
   font-family: ${fonts.secondary};
 `;
 
-// 2.C Font Size
+// 2.B Font Size
 const font_size_xs = css`
   font-size: ${scale.xs};
 `;
@@ -574,20 +803,20 @@ const font_size_xxl = css`
   font-size: ${scale.xxl};
 `;
 
-// 2.D Font Weight
+// 2.C Font Weight
 const font_light = css`
-  font-weight: 400;
+  font-weight: 300;
 `;
 
 const font_med = css`
-  font-weight: 500;
+  font-weight: 400;
 `;
 
 const font_bold = css`
-  font-weight: 600;
+  font-weight: 500;
 `;
 
-// 2.E Letter Spacing
+// 2.D Letter Spacing
 const tracking_tight = css`
   letter-spacing: -0.5px;
 `;
@@ -598,7 +827,7 @@ const tracking_wide = css`
   letter-spacing: 0.5px;
 `;
 
-// 2.F Line Height
+// 2.E Line Height
 const leading_none = css`
   line-height: 0;
 `;
@@ -615,7 +844,7 @@ const leading_loose = css`
   line-height: 1.75;
 `;
 
-// 2.G Lists
+// 2.F Lists
 const list_reset = css`
   list-style: none;
   padding: 0;
@@ -641,7 +870,7 @@ const list_decimal = css`
   list-style-type: decimal;
 `;
 
-// 2.H Style and Decoration
+// 2.G Style and Decoration
 const italic = css`
   font-style: italic;
 `;
@@ -678,7 +907,7 @@ const no_underline = css`
   text-decoration: none;
 `;
 
-// 2.I Text Alignment
+// 2.H Text Alignment
 const text_left = css`
   text-align: left;
 `;
@@ -695,7 +924,7 @@ const text_justify = css`
   text-align: justify;
 `;
 
-// 2.J Vertical Alignment
+// 2.I Vertical Alignment
 const align_baseline = css`
   vertical-align: baseline;
 `;
@@ -720,7 +949,7 @@ const align_text_bottom = css`
   vertical-align: text-bottom;
 `;
 
-// 2.K Whitespace & Wrapping
+// 2.J Whitespace & Wrapping
 const whitespace_normal = css`
   white-space: normal;
 `;
@@ -773,318 +1002,6 @@ const bg_local = css`
 const bg_scroll = css`
   background-attachment: scroll;
 `;
-// 3.B Background Color
-const bg_transparent = css`
-  background-color: transparent;
-`;
-
-const bg_gradient = css`
-  background: linear-gradient(
-    to bottom right,
-    ${palette.gradient.start},
-    ${palette.gradient.stop}
-  );
-`;
-
-const bg_black = css`
-  background-color: #22292f;
-`;
-
-const bg_gray_darkest = css`
-  background-color: #3d4852;
-`;
-
-const bg_gray_darker = css`
-  background-color: #606f7b;
-`;
-
-const bg_gray_dark = css`
-  background-color: #8795a1;
-`;
-
-const bg_gray = css`
-  background-color: #b8c2cc;
-`;
-
-const bg_gray_light = css`
-  background-color: #dae1e7;
-`;
-
-const bg_gray_lighter = css`
-  background-color: #f1f5f8;
-`;
-
-const bg_gray_lightest = css`
-  background-color: #f8fafc;
-`;
-
-const bg_white = css`
-  background-color: #ffffff;
-`;
-
-const bg_white_25 = css`
-  background-color: #ffffff40;
-`;
-
-const bg_white_50 = css`
-  background-color: #ffffff80;
-`;
-
-const bg_white_75 = css`
-  background-color: #ffffffbf;
-`;
-
-const bg_red_darkest = css`
-  background-color: #3b0d0c;
-`;
-
-const bg_red_darker = css`
-  background-color: #621b18;
-`;
-
-const bg_red_dark = css`
-  background-color: #cc1f1a;
-`;
-
-const bg_red = css`
-  background-color: #e3342f;
-`;
-
-const bg_red_light = css`
-  background-color: #ef5753;
-`;
-
-const bg_red_lighter = css`
-  background-color: #f9acaa;
-`;
-
-const bg_red_lightest = css`
-  background-color: #fcebea;
-`;
-
-const bg_orange_darkest = css`
-  background-color: #462a16;
-`;
-
-const bg_orange_darker = css`
-  background-color: #613b1f;
-`;
-
-const bg_orange_dark = css`
-  background-color: #de751f;
-`;
-
-const bg_orange = css`
-  background-color: #f6993f;
-`;
-
-const bg_orange_light = css`
-  background-color: #faad63;
-`;
-
-const bg_orange_lighter = css`
-  background-color: #fcd9b6;
-`;
-
-const bg_orange_lightest = css`
-  background-color: #fff5eb;
-`;
-
-const bg_yellow_darkest = css`
-  background-color: #453411;
-`;
-
-const bg_yellow_darker = css`
-  background-color: #684f1d;
-`;
-
-const bg_yellow_dark = css`
-  background-color: #f2d024;
-`;
-
-const bg_yellow = css`
-  background-color: #ffed4a;
-`;
-
-const bg_yellow_light = css`
-  background-color: #fff382;
-`;
-
-const bg_yellow_lighter = css`
-  background-color: #fff9c2;
-`;
-
-const bg_yellow_lightest = css`
-  background-color: #fcfbeb;
-`;
-
-const bg_green_darkest = css`
-  background-color: #0f2f21;
-`;
-
-const bg_green_darker = css`
-  background-color: #1a4731;
-`;
-
-const bg_green_dark = css`
-  background-color: #1f9d55;
-`;
-
-const bg_green = css`
-  background-color: #38c172;
-`;
-
-const bg_green_light = css`
-  background-color: #51d88a;
-`;
-
-const bg_green_lighter = css`
-  background-color: #a2f5bf;
-`;
-
-const bg_green_lightest = css`
-  background-color: #e3fcec;
-`;
-
-const bg_teal_darkest = css`
-  background-color: #0d3331;
-`;
-
-const bg_teal_darker = css`
-  background-color: #20504f;
-`;
-
-const bg_teal_dark = css`
-  background-color: #38a89d;
-`;
-
-const bg_teal = css`
-  background-color: #4dc0b5;
-`;
-
-const bg_teal_light = css`
-  background-color: #64d5ca;
-`;
-
-const bg_teal_lighter = css`
-  background-color: #a0f0ed;
-`;
-
-const bg_teal_lightest = css`
-  background-color: #e8fffe;
-`;
-
-const bg_blue_darkest = css`
-  background-color: #12283a;
-`;
-
-const bg_blue_darker = css`
-  background-color: #1c3d5a;
-`;
-
-const bg_blue_dark = css`
-  background-color: #2779bd;
-`;
-
-const bg_blue = css`
-  background-color: #3490dc;
-`;
-
-const bg_blue_light = css`
-  background-color: #6cb2eb;
-`;
-
-const bg_blue_lighter = css`
-  background-color: #bcdefa;
-`;
-
-const bg_blue_lightest = css`
-  background-color: #eff8ff;
-`;
-
-const bg_indigo_darkest = css`
-  background-color: #191e38;
-`;
-
-const bg_indigo_darker = css`
-  background-color: #2f365f;
-`;
-
-const bg_indigo_dark = css`
-  background-color: #5661b3;
-`;
-
-const bg_indigo = css`
-  background-color: #6574cd;
-`;
-
-const bg_indigo_light = css`
-  background-color: #7886d7;
-`;
-
-const bg_indigo_lighter = css`
-  background-color: #b2b7ff;
-`;
-
-const bg_indigo_lightest = css`
-  background-color: #e6e8ff;
-`;
-
-const bg_purple_darkest = css`
-  background-color: #21183c;
-`;
-
-const bg_purple_darker = css`
-  background-color: #382b5f;
-`;
-
-const bg_purple_dark = css`
-  background-color: #794acf;
-`;
-
-const bg_purple = css`
-  background-color: #9561e2;
-`;
-
-const bg_purple_light = css`
-  background-color: #a779e9;
-`;
-
-const bg_purple_lighter = css`
-  background-color: #d6bbfc;
-`;
-
-const bg_purple_lightest = css`
-  background-color: #f3ebff;
-`;
-
-const bg_pink_darkest = css`
-  background-color: #451225;
-`;
-
-const bg_pink_darker = css`
-  background-color: #6f213f;
-`;
-
-const bg_pink_dark = css`
-  background-color: #eb5286;
-`;
-
-const bg_pink = css`
-  background-color: #f66d9b;
-`;
-
-const bg_pink_light = css`
-  background-color: #fa7ea8;
-`;
-
-const bg_pink_lighter = css`
-  background-color: #ffbbca;
-`;
-
-const bg_pink_lightest = css`
-  background-color: #ffebef;
-`;
 
 // 3.C Background Position
 const bg_bottom = css`
@@ -1123,7 +1040,7 @@ const bg_top = css`
   background-position: top;
 `;
 
-// 3.D Background Repeat
+// 3.C Background Repeat
 const bg_repeat = css`
   background-repeat: repeat;
 `;
@@ -1140,7 +1057,7 @@ const bg_repeat_y = css`
   background-repeat: repeat-y;
 `;
 
-// 3.E Background Size
+// 3.D Background Size
 const bg_auto = css`
   background-size: auto;
 `;
@@ -1154,405 +1071,11 @@ const bg_contain = css`
 `;
 
 // 4. Border
-// 4.A Border Color
-
 const border_box = css`
   box-sizing: border-box;
 `;
 
-const border_transparent = css`
-  border-color: transparent;
-`;
-
-const border_black = css`
-  border-color: #000;
-`;
-
-const border_white = css`
-  border-color: #fff;
-`;
-
-const border_primary = css`
-  border-color: ${palette.primary.main};
-`;
-
-const border_primary_light = css`
-  border-color: ${palette.primary.light};
-`;
-
-const border_secondary = css`
-  border-color: ${palette.secondary.main};
-`;
-
-const border_secondary_light = css`
-  border-color: ${palette.secondary.light};
-`;
-
-const border_secondary_complement = css`
-  border-color: ${palette.secondary.complement};
-`;
-
-const border_gray_100 = css`
-  border-color: #f7fafc;
-`;
-
-const border_gray_200 = css`
-  border-color: #edf2f7;
-`;
-
-const border_gray_300 = css`
-  border-color: #e2e8f0;
-`;
-
-const border_gray_400 = css`
-  border-color: #cbd5e0;
-`;
-
-const border_gray_500 = css`
-  border-color: #a0aec0;
-`;
-
-const border_gray_600 = css`
-  border-color: #718096;
-`;
-
-const border_gray_700 = css`
-  border-color: #4a5568;
-`;
-
-const border_gray_800 = css`
-  border-color: #2d3748;
-`;
-
-const border_gray_900 = css`
-  border-color: #1a202c;
-`;
-
-const border_red_100 = css`
-  border-color: #fff5f5;
-`;
-
-const border_red_200 = css`
-  border-color: #fed7d7;
-`;
-
-const border_red_300 = css`
-  border-color: #feb2b2;
-`;
-
-const border_red_400 = css`
-  border-color: #fc8181;
-`;
-
-const border_red_500 = css`
-  border-color: #f56565;
-`;
-
-const border_red_600 = css`
-  border-color: #e53e3e;
-`;
-
-const border_red_700 = css`
-  border-color: #c53030;
-`;
-
-const border_red_800 = css`
-  border-color: #9b2c2c;
-`;
-
-const border_red_900 = css`
-  border-color: #742a2a;
-`;
-
-const border_orange_100 = css`
-  border-color: #fffaf0;
-`;
-
-const border_orange_200 = css`
-  border-color: #feebc8;
-`;
-
-const border_orange_300 = css`
-  border-color: #fbd38d;
-`;
-
-const border_orange_400 = css`
-  border-color: #f6ad55;
-`;
-
-const border_orange_500 = css`
-  border-color: #ed8936;
-`;
-
-const border_orange_600 = css`
-  border-color: #dd6b20;
-`;
-
-const border_orange_700 = css`
-  border-color: #c05621;
-`;
-
-const border_orange_800 = css`
-  border-color: #9c4221;
-`;
-
-const border_orange_900 = css`
-  border-color: #7b341e;
-`;
-
-const border_yellow_100 = css`
-  border-color: #fffff0;
-`;
-
-const border_yellow_200 = css`
-  border-color: #fefcbf;
-`;
-
-const border_yellow_300 = css`
-  border-color: #faf089;
-`;
-
-const border_yellow_400 = css`
-  border-color: #f6e05e;
-`;
-
-const border_yellow_500 = css`
-  border-color: #ecc94b;
-`;
-
-const border_yellow_600 = css`
-  border-color: #d69e2e;
-`;
-
-const border_yellow_700 = css`
-  border-color: #b7791f;
-`;
-
-const border_yellow_800 = css`
-  border-color: #975a16;
-`;
-
-const border_yellow_900 = css`
-  border-color: #744210;
-`;
-
-const border_green_100 = css`
-  border-color: #f0fff4;
-`;
-
-const border_green_200 = css`
-  border-color: #c6f6d5;
-`;
-
-const border_green_300 = css`
-  border-color: #9ae6b4;
-`;
-
-const border_green_400 = css`
-  border-color: #68d391;
-`;
-
-const border_green_500 = css`
-  border-color: #48bb78;
-`;
-
-const border_green_600 = css`
-  border-color: #38a169;
-`;
-
-const border_green_700 = css`
-  border-color: #2f855a;
-`;
-
-const border_green_800 = css`
-  border-color: #276749;
-`;
-
-const border_green_900 = css`
-  border-color: #22543d;
-`;
-
-const border_teal_100 = css`
-  border-color: #e6fffa;
-`;
-
-const border_teal_200 = css`
-  border-color: #b2f5ea;
-`;
-
-const border_teal_300 = css`
-  border-color: #81e6d9;
-`;
-
-const border_teal_400 = css`
-  border-color: #4fd1c5;
-`;
-
-const border_teal_500 = css`
-  border-color: #38b2ac;
-`;
-
-const border_teal_600 = css`
-  border-color: #319795;
-`;
-
-const border_teal_700 = css`
-  border-color: #2c7a7b;
-`;
-
-const border_teal_800 = css`
-  border-color: #285e61;
-`;
-
-const border_teal_900 = css`
-  border-color: #234e52;
-`;
-
-const border_blue_100 = css`
-  border-color: #ebf8ff;
-`;
-
-const border_blue_200 = css`
-  border-color: #bee3f8;
-`;
-
-const border_blue_300 = css`
-  border-color: #90cdf4;
-`;
-
-const border_blue_400 = css`
-  border-color: #63b3ed;
-`;
-
-const border_blue_500 = css`
-  border-color: #4299e1;
-`;
-
-const border_blue_600 = css`
-  border-color: #3182ce;
-`;
-
-const border_blue_700 = css`
-  border-color: #2b6cb0;
-`;
-
-const border_blue_800 = css`
-  border-color: #2c5282;
-`;
-
-const border_blue_900 = css`
-  border-color: #2a4365;
-`;
-
-const border_indigo_100 = css`
-  border-color: #ebf4ff;
-`;
-
-const border_indigo_200 = css`
-  border-color: #c3dafe;
-`;
-
-const border_indigo_300 = css`
-  border-color: #a3bffa;
-`;
-
-const border_indigo_400 = css`
-  border-color: #7f9cf5;
-`;
-
-const border_indigo_500 = css`
-  border-color: #667eea;
-`;
-
-const border_indigo_600 = css`
-  border-color: #5a67d8;
-`;
-
-const border_indigo_700 = css`
-  border-color: #4c51bf;
-`;
-
-const border_indigo_800 = css`
-  border-color: #434190;
-`;
-
-const border_indigo_900 = css`
-  border-color: #3c366b;
-`;
-
-const border_purple_100 = css`
-  border-color: #faf5ff;
-`;
-
-const border_purple_200 = css`
-  border-color: #e9d8fd;
-`;
-
-const border_purple_300 = css`
-  border-color: #d6bcfa;
-`;
-
-const border_purple_400 = css`
-  border-color: #b794f4;
-`;
-
-const border_purple_500 = css`
-  border-color: #9f7aea;
-`;
-
-const border_purple_600 = css`
-  border-color: #805ad5;
-`;
-
-const border_purple_700 = css`
-  border-color: #6b46c1;
-`;
-
-const border_purple_800 = css`
-  border-color: #553c9a;
-`;
-
-const border_purple_900 = css`
-  border-color: #44337a;
-`;
-
-const border_pink_100 = css`
-  border-color: #fff5f7;
-`;
-
-const border_pink_200 = css`
-  border-color: #fed7e2;
-`;
-
-const border_pink_300 = css`
-  border-color: #fbb6ce;
-`;
-
-const border_pink_400 = css`
-  border-color: #f687b3;
-`;
-
-const border_pink_500 = css`
-  border-color: #ed64a6;
-`;
-
-const border_pink_600 = css`
-  border-color: #d53f8c;
-`;
-
-const border_pink_700 = css`
-  border-color: #b83280;
-`;
-
-const border_pink_800 = css`
-  border-color: #97266d;
-`;
-
-const border_pink_900 = css`
-  border-color: #702459;
-`;
-
-// 4.B Border Style
+// 4.A Border Style
 const border_solid = css`
   border-style: solid;
 `;
@@ -1569,7 +1092,7 @@ const border_none = css`
   border-style: none;
 `;
 
-// 4.C Border Width
+// 4.B Border Width
 const border_0 = css`
   border-width: 0;
 `;
@@ -1674,7 +1197,7 @@ const border_left = css`
   border-left-width: 1px;
 `;
 
-// 4.D Border Radius
+// 4.C Border Radius
 const rounded_none = css`
   border-radius: 0;
 `;
@@ -3003,49 +2526,107 @@ const stroke_current = css`
 export {
   // 0.1 Color
   text_color_default,
-  text_color_muted,
+  text_color_transparent,
   text_color_primary,
   text_color_primary_light,
-  text_color_secondary,
-  text_color_secondary_light,
-  text_color_secondary_complement,
-  text_color_charcoal,
-  text_color_slate,
-  text_color_stone,
-  text_color_fog,
-  text_color_whiteSmoke,
+  text_color_secondary_1,
+  text_color_secondary_2,
+  text_color_secondary_3,
+  text_color_secondary_4,
+  text_color_secondary_5,
+  text_color_secondary_6,
+  text_color_secondary_7,
+  text_color_secondary_8,
+  text_color_secondary_9,
+  text_color_secondary_10,
+  text_color_tertiary_light,
+  text_color_tertiary_dark,
+  text_color_tertiary_complement,
+  text_color_utility_light,
+  text_color_utility_medium,
+  text_color_utility_dark,
+  text_color_utility_complement,
   text_color_white,
-  text_color_white_25,
-  text_color_white_50,
-  text_color_white_75,
+  text_color_greyscale_1,
+  text_color_greyscale_2,
+  text_color_greyscale_3,
+  text_color_greyscale_4,
+  text_color_greyscale_5,
+  text_color_greyscale_6,
+  text_color_greyscale_7,
+  text_color_greyscale_8,
+  text_color_greyscale_9,
+  text_color_greyscale_10,
+  text_color_greyscale_11,
+  text_color_black,
   // 0.2 Background Color
-  bg_default,
   bg_none,
-  bg_muted,
+  bg_transparent,
   bg_primary,
-  bg_primary_25,
-  bg_primary_50,
-  bg_primary_75,
   bg_primary_light,
-  bg_secondary,
-  bg_secondary_light,
-  bg_secondary_complement,
-  bg_charcoal,
-  bg_slate,
-  bg_stone,
-  bg_fog,
-  bg_fog_25,
-  bg_fog_50,
-  bg_fog_75,
-  bg_whiteSmoke,
-  bg_blackHaze,
-  bg_overlay,
+  bg_secondary_scale_1,
+  bg_secondary_scale_2,
+  bg_secondary_scale_3,
+  bg_secondary_scale_4,
+  bg_secondary_scale_5,
+  bg_secondary_scale_6,
+  bg_secondary_scale_7,
+  bg_secondary_scale_8,
+  bg_secondary_scale_9,
+  bg_secondary_scale_10,
+  bg_tertiary_light,
+  bg_tertiary_dark,
+  bg_tertiary_complement,
+  bg_utility_light,
+  bg_utility_medium,
+  bg_utility_dark,
+  bg_utility_complement,
+  bg_white,
+  bg_greyscale_1,
+  bg_greyscale_2,
+  bg_greyscale_3,
+  bg_greyscale_4,
+  bg_greyscale_5,
+  bg_greyscale_6,
+  bg_greyscale_7,
+  bg_greyscale_8,
+  bg_greyscale_9,
+  bg_greyscale_10,
+  bg_greyscale_11,
   // 0.3 Border Color
-  border_fog,
-  border_slate,
-  border_stone,
-  border_whiteSmoke,
-  border_blackHaze,
+  border_transparent,
+  border_primary,
+  border_primary_light,
+  border_secondary_1,
+  border_secondary_2,
+  border_secondary_3,
+  border_secondary_4,
+  border_secondary_5,
+  border_secondary_6,
+  border_secondary_7,
+  border_secondary_8,
+  border_secondary_9,
+  border_secondary_10,
+  border_tertiary_light,
+  border_tertiary_dark,
+  border_tertiary_complement,
+  border_utility_light,
+  border_utility_medium,
+  border_utility_dark,
+  border_utility_complement,
+  border_white,
+  border_greyscale_1,
+  border_greyscale_2,
+  border_greyscale_3,
+  border_greyscale_4,
+  border_greyscale_5,
+  border_greyscale_6,
+  border_greyscale_7,
+  border_greyscale_8,
+  border_greyscale_9,
+  border_greyscale_10,
+  border_greyscale_11,
+  border_black,
   // 0.4 Other
   content_box,
   // 1.A Display
@@ -3119,39 +2700,37 @@ export {
   z_40,
   z_50,
   z_auto,
-  // 2.A Color
-  text_color_transparent,
-  // 2.B Font Family
+  // 2.A Font Family
   font_primary,
   font_secondary,
-  // 2.C Font Family
+  // 2.B Font Family
   font_size_xs,
   font_size_sm,
   font_size_md,
   font_size_lg,
   font_size_xl,
   font_size_xxl,
-  // 2.D Font Family
+  // 2.C Font Family
   font_light,
   font_med,
   font_bold,
-  // 2.E Letter Spacing
+  // 2.D Letter Spacing
   tracking_tight,
   tracking_normal,
   tracking_wide,
-  // 2.F Line Height
+  // 2.E Line Height
   leading_none,
   leading_tight,
   leading_normal,
   leading_loose,
-  // 2.G Lists
+  // 2.F Lists
   list_reset,
   list_inside,
   list_outside,
   list_none,
   list_disc,
   list_decimal,
-  // 2.H Style & Decoration
+  // 2.G Style & Decoration
   italic,
   roman,
   uppercase,
@@ -3161,19 +2740,19 @@ export {
   underline,
   line_through,
   no_underline,
-  // 2.I Text Alignment
+  // 2.H Text Alignment
   text_left,
   text_center,
   text_right,
   text_justify,
-  // 2.J Vertical Alignment
+  // 2.I Vertical Alignment
   align_baseline,
   align_top,
   align_middle,
   align_bottom,
   align_text_top,
   align_text_bottom,
-  // 2.K Whitespace & Wrapping
+  // 2.J Whitespace & Wrapping
   whitespace_normal,
   whitespace_no_wrap,
   whitespace_pre,
@@ -3187,84 +2766,6 @@ export {
   bg_fixed,
   bg_local,
   bg_scroll,
-  // 3.B Background Color
-  bg_transparent,
-  bg_gradient,
-  bg_black,
-  bg_gray_darkest,
-  bg_gray_darker,
-  bg_gray_dark,
-  bg_gray,
-  bg_gray_light,
-  bg_gray_lighter,
-  bg_gray_lightest,
-  bg_white,
-  bg_white_25,
-  bg_white_50,
-  bg_white_75,
-  bg_red_darkest,
-  bg_red_darker,
-  bg_red_dark,
-  bg_red,
-  bg_red_light,
-  bg_red_lighter,
-  bg_red_lightest,
-  bg_orange_darkest,
-  bg_orange_darker,
-  bg_orange_dark,
-  bg_orange,
-  bg_orange_light,
-  bg_orange_lighter,
-  bg_orange_lightest,
-  bg_yellow_darkest,
-  bg_yellow_darker,
-  bg_yellow_dark,
-  bg_yellow,
-  bg_yellow_light,
-  bg_yellow_lighter,
-  bg_yellow_lightest,
-  bg_green_darkest,
-  bg_green_darker,
-  bg_green_dark,
-  bg_green,
-  bg_green_light,
-  bg_green_lighter,
-  bg_green_lightest,
-  bg_teal_darkest,
-  bg_teal_darker,
-  bg_teal_dark,
-  bg_teal,
-  bg_teal_light,
-  bg_teal_lighter,
-  bg_teal_lightest,
-  bg_blue_darkest,
-  bg_blue_darker,
-  bg_blue_dark,
-  bg_blue,
-  bg_blue_light,
-  bg_blue_lighter,
-  bg_blue_lightest,
-  bg_indigo_darkest,
-  bg_indigo_darker,
-  bg_indigo_dark,
-  bg_indigo,
-  bg_indigo_light,
-  bg_indigo_lighter,
-  bg_indigo_lightest,
-  bg_purple_darkest,
-  bg_purple_darker,
-  bg_purple_dark,
-  bg_purple,
-  bg_purple_light,
-  bg_purple_lighter,
-  bg_purple_lightest,
-  bg_pink_darkest,
-  bg_pink_darker,
-  bg_pink_dark,
-  bg_pink,
-  bg_pink_light,
-  bg_pink_lighter,
-  bg_pink_lightest,
   // 3.C Background Position
   bg_bottom,
   bg_center,
@@ -3286,104 +2787,6 @@ export {
   bg_contain,
   // 4.A Border Color
   border_box,
-  border_transparent,
-  border_black,
-  border_white,
-  border_primary,
-  border_primary_light,
-  border_secondary,
-  border_secondary_light,
-  border_secondary_complement,
-  border_gray_100,
-  border_gray_200,
-  border_gray_300,
-  border_gray_400,
-  border_gray_500,
-  border_gray_600,
-  border_gray_700,
-  border_gray_800,
-  border_gray_900,
-  border_red_100,
-  border_red_200,
-  border_red_300,
-  border_red_400,
-  border_red_500,
-  border_red_600,
-  border_red_700,
-  border_red_800,
-  border_red_900,
-  border_orange_100,
-  border_orange_200,
-  border_orange_300,
-  border_orange_400,
-  border_orange_500,
-  border_orange_600,
-  border_orange_700,
-  border_orange_800,
-  border_orange_900,
-  border_yellow_100,
-  border_yellow_200,
-  border_yellow_300,
-  border_yellow_400,
-  border_yellow_500,
-  border_yellow_600,
-  border_yellow_700,
-  border_yellow_800,
-  border_yellow_900,
-  border_green_100,
-  border_green_200,
-  border_green_300,
-  border_green_400,
-  border_green_500,
-  border_green_600,
-  border_green_700,
-  border_green_800,
-  border_green_900,
-  border_teal_100,
-  border_teal_200,
-  border_teal_300,
-  border_teal_400,
-  border_teal_500,
-  border_teal_600,
-  border_teal_700,
-  border_teal_800,
-  border_teal_900,
-  border_blue_100,
-  border_blue_200,
-  border_blue_300,
-  border_blue_400,
-  border_blue_500,
-  border_blue_600,
-  border_blue_700,
-  border_blue_800,
-  border_blue_900,
-  border_indigo_100,
-  border_indigo_200,
-  border_indigo_300,
-  border_indigo_400,
-  border_indigo_500,
-  border_indigo_600,
-  border_indigo_700,
-  border_indigo_800,
-  border_indigo_900,
-  border_purple_100,
-  border_purple_200,
-  border_purple_300,
-  border_purple_400,
-  border_purple_500,
-  border_purple_600,
-  border_purple_700,
-  border_purple_800,
-  border_purple_900,
-  border_pink_100,
-  border_pink_200,
-  border_pink_300,
-  border_pink_400,
-  border_pink_500,
-  border_pink_600,
-  border_pink_700,
-  border_pink_800,
-  border_pink_900,
   // 4.B Border Style
   border_solid,
   border_dashed,
