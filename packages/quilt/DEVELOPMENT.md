@@ -20,12 +20,6 @@
 
 Install the following if you don't already have them
 
-yarn
-
-> `brew install yarn --without-node`
->
-> [click here for additional installation options](https://yarnpkg.com/lang/en/docs/install/)
-
 nvm
 
 > `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash`
@@ -51,7 +45,7 @@ The commands for the various aspects of development are located in the `package.
 Run commands like this:
 
 ```
-yarn run <command_name>
+npm run <command_name>
 ```
 
 ## Workflow
@@ -59,18 +53,18 @@ yarn run <command_name>
 To get things running quickly we provide a single command that should get you up and going with the basics of what you need.
 
 ```
-yarn run dev
+npm run dev
 ```
 
 This command essentially does the following:
 
-1. Install all packages (equivalent to running `yarn`)
-2. Builds and watches the source code (equivalent to running `yarn run dev:ts`)
-3. Build the docz and storybook documentation then watches for updates (equivalent to running `yarn run dev:documentation`)
+1. Install all packages (equivalent to running `npm install`)
+2. Builds and watches the source code (equivalent to running `npm run dev:ts`)
+3. Build storybook documentation then watches for updates (equivalent to running `npm run dev:storybook`)
 
 If all packages are already installed it should take less than 30 seconds for things to be up and running.
 
-The docz and storybook documentation are served from <http://localhost:3000> and <http://localhost:9001> respectively.
+The storybook documentation is served from <http://localhost:9001> by default.
 
 If you know what you're doing then can run things separately and reference the numerous commands available in the `package.json`, many of which just call other smaller commands. Feel free to look through those and use them for your particular use case.
 
@@ -79,7 +73,7 @@ If you know what you're doing then can run things separately and reference the n
 For simple and straightforward use cases a generator tool is provided to bootstrap the files for new components. Run the command below and follow any prompts then come back here for further instruction.
 
 ```
-yarn run create:component
+npm run create:component
 ```
 
 After running this command successfuly, a few files will be created. Following that, a few manual updates need to be made to complete the addition of the new component.
@@ -187,5 +181,3 @@ Our intent with Storybook is to use it as a showcase to demonstrate the depth an
 ### Future Section for Guide
 
 ## Notes
-
-By having a yarn (with a version of 1.0.0 or higher) you will automatically use the specific version of yarn included in this repo (located at `bin/yarn-x.x.x.js`). The purpose of this is to try and make environments more consistent and replicable between developers and their own local usage.

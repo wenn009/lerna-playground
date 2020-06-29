@@ -576,15 +576,15 @@ const font_size_xxl = css`
 
 // 2.D Font Weight
 const font_light = css`
-  font-weight: 300;
-`;
-
-const font_med = css`
   font-weight: 400;
 `;
 
-const font_bold = css`
+const font_med = css`
   font-weight: 500;
+`;
+
+const font_bold = css`
+  font-weight: 600;
 `;
 
 // 2.E Letter Spacing

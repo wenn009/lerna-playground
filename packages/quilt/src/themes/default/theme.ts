@@ -1,27 +1,27 @@
+import { BodyTextTheme } from '../../components/BodyText/BodyText.theme';
+import { ContainerTheme } from '../../components/Container/Container.theme';
+import { ContainerColTheme } from '../../components/Container/ContainerCol.theme';
+import { ContainerRowTheme } from '../../components/Container/ContainerRow.theme';
+import { ContainerRowBreakTheme } from '../../components/Container/ContainerRowBreak.theme';
+import { H1Theme } from '../../components/H1/H1.theme';
+import { H2Theme } from '../../components/H2/H2.theme';
+import { H3Theme } from '../../components/H3/H3.theme';
+import { H4Theme } from '../../components/H4/H4.theme';
+import { H5Theme } from '../../components/H5/H5.theme';
+import { H6Theme } from '../../components/H6/H6.theme';
+import { IconTheme } from '../../components/Icon/Icon.theme';
+import { LinkTheme } from '../../components/Link/Link.theme';
+import { PrimaryButtonTheme } from '../../components/PrimaryButton/PrimaryButton.theme';
+import { SecondaryButtonTheme } from '../../components/SecondaryButton/SecondaryButton.theme';
+import { TertiaryButtonTheme } from '../../components/TertiaryButton/TertiaryButton.theme';
 import { ITheme as IDefaultTheme } from '../../theme/structures';
-import { BodyTextTheme } from './BodyText';
 import { breakpoints } from './breakpoints';
 import { colors } from './colors';
-import { ContainerTheme } from './Container';
-import { ContainerColTheme } from './ContainerCol';
-import { ContainerRowTheme } from './ContainerRow';
-import { ContainerRowBreakTheme } from './ContainerRowBreak';
 import { fonts } from './fonts';
-import { H1Theme } from './H1';
-import { H2Theme } from './H2';
-import { H3Theme } from './H3';
-import { H4Theme } from './H4';
-import { H5Theme } from './H5';
-import { H6Theme } from './H6';
-import { IconTheme } from './Icon';
-import { LinkTheme } from './Link';
 import { palette } from './palette';
-import { PrimaryButtonTheme } from './PrimaryButton';
 import { scale } from './scale';
-import { SecondaryButtonTheme } from './SecondaryButton';
 import { sizes } from './sizes';
 import { spaces } from './spaces';
-import { TertiaryButtonTheme } from './TertiaryButton';
 
 const theme: IDefaultTheme = {
   components: {

@@ -2,14 +2,14 @@
 
 ## Installation
 
-Quilt is available as an [npm package](http://npm.prod.factual.com/@factual/quilt).
+Quilt is available as an internal npm package(@foursquare/quilt).
 
 ```sh
 // with npm
-npm install @factual/quilt
+npm install @foursquare/quilt
 
 // with yarn
-yarn add @factual/quilt
+yarn add @foursquare/quilt
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ ReactDOM.render(<App />, document.querySelector('#app'))
 ## Questions
 
 For _how-to_ questions and other non-issues,
-please use the [Quilt Slack Channel](https://factual.slack.com/messages/CC7UVEEMN) instead of Github issues.
+please use _TBD_ instead of Github issues.
 
 ## Examples
 
@@ -40,23 +40,9 @@ Well, one day we will have some...
 
 ## Documentation
 
-https://quilt.prod.factual.com/
+STORYBOOK LINK TBD
 
-https://www.figma.com/file/O3AzAQlNSACiV2uZ4lMBrVXW/Quilt-2019
-
-Read the docs and play with the components in a simulated environment
-
-```sh
-# in one shell
-yarn run build:watch
-```
-
-```sh
-# in another shell
-yarn run docz:dev
-```
-
-Then you can play with the components by editing files in the `docs/` folder
+https://www.figma.com/file/1JKh9woyHy7VbJj7PWPUKY/Components_Signed-off
 
 ## Development
 
@@ -77,4 +63,4 @@ The future plans and high priority features and enhancements can be found in the
 
 ## License
 
-This project is UNLICENSED and is to remain private and internal at Factual.
+This project is UNLICENSED and is to remain private and internal at Foursquare.
