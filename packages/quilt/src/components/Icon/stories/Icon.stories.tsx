@@ -4,7 +4,7 @@ import { Icon } from '../../../../dist';
 import { iconOptions } from './constants';
 
 export const Icons = () => (
-  <Icon type={select('type', iconOptions, 'Factual')} />
+  <Icon type={select('type', iconOptions, '3DRotation')} />
 );
 
 // tslint:disable-next-line: no-default-export

@@ -8,8 +8,8 @@ import {
   css,
 } from '../../../../dist';
 import {
-  bg_secondary,
-  bg_secondary_complement,
+  bg_greyscale_1,
+  bg_greyscale_2,
   border_1,
   border_black,
   border_solid,
@@ -37,7 +37,7 @@ const DemoContainerCol = (props) => {
       {...props}
       qExtend={css`
         ${[
-          bg_secondary_complement,
+          bg_greyscale_2,
           border_1,
           border_black,
           border_solid,
@@ -53,7 +53,7 @@ const DemoContainerCol = (props) => {
 
 const DemoLabel = (props) => {
   return (
-    <BodyText {...props} qExtend={[bg_secondary, pd_top_sm, pd_bottom_sm]}>
+    <BodyText {...props} qExtend={[bg_greyscale_1, pd_top_sm, pd_bottom_sm]}>
       {props.children}
     </BodyText>
   );
