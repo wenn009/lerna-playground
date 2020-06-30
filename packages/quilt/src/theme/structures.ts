@@ -48,9 +48,9 @@ interface IColors<T extends StructureValueType> {
 }
 
 interface IPalette<T extends StructureValueType> {
-  primary: {
-    main: T;
-    light: T;
+  main: {
+    primary: T;
+    secondary: T;
   };
   secondary: {
     scale_1: T;
@@ -89,6 +89,9 @@ interface IPalette<T extends StructureValueType> {
     scale_10: T;
     scale_11: T;
     black: T;
+  };
+  text: {
+    default: T;
   };
 }
 

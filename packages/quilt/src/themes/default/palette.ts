@@ -2,9 +2,9 @@ import { IPalette as IDefaultPalette } from '../../theme/structures';
 import { colors } from './colors';
 
 const palette: IDefaultPalette<string> = {
-  primary: {
-    main: colors.blue,
-    light: colors.cornflower,
+  main: {
+    primary: colors.blue,
+    secondary: colors.cornflower,
   },
   secondary: {
     scale_1: colors.foundation,
@@ -43,6 +43,9 @@ const palette: IDefaultPalette<string> = {
     scale_10: colors.thunder,
     scale_11: colors.jet,
     black: colors.black,
+  },
+  text: {
+    default: colors.cornflower,
   },
 };
 

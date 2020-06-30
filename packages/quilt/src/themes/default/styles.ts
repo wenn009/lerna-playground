@@ -87,15 +87,15 @@ const text_color_transparent = css`
 `;
 
 const text_color_default = css`
-  color: ${palette.secondary.scale_6};
+  color: ${palette.text.default};
 `;
 
-const text_color_primary = css`
-  color: ${palette.primary.main};
+const text_color_main_primary = css`
+  color: ${palette.main.primary};
 `;
 
-const text_color_primary_light = css`
-  color: ${palette.primary.light};
+const text_color_main_secondary = css`
+  color: ${palette.main.secondary};
 `;
 
 const text_color_secondary_1 = css`
@@ -227,12 +227,12 @@ const bg_transparent = css`
   background-color: transparent;
 `;
 
-const bg_primary = css`
-  background-color: ${palette.primary.main};
+const bg_main_primary = css`
+  background-color: ${palette.main.primary};
 `;
 
-const bg_primary_light = css`
-  background-color: ${palette.primary.light};
+const bg_main_secondary = css`
+  background-color: ${palette.main.secondary};
 `;
 
 const bg_secondary_scale_1 = css`
@@ -356,12 +356,12 @@ const border_transparent = css`
   border-color: transparent;
 `;
 
-const border_primary = css`
-  border-color: ${palette.primary.main};
+const border_main_primary = css`
+  border-color: ${palette.main.primary};
 `;
 
-const border_primary_light = css`
-  border-color: ${palette.primary.light};
+const border_main_secondary = css`
+  border-color: ${palette.main.secondary};
 `;
 
 const border_secondary_1 = css`
@@ -2523,8 +2523,8 @@ export {
   // 0.1 Color
   text_color_default,
   text_color_transparent,
-  text_color_primary,
-  text_color_primary_light,
+  text_color_main_primary,
+  text_color_main_secondary,
   text_color_secondary_1,
   text_color_secondary_2,
   text_color_secondary_3,
@@ -2558,8 +2558,8 @@ export {
   // 0.2 Background Color
   bg_none,
   bg_transparent,
-  bg_primary,
-  bg_primary_light,
+  bg_main_primary,
+  bg_main_secondary,
   bg_secondary_scale_1,
   bg_secondary_scale_2,
   bg_secondary_scale_3,
@@ -2591,8 +2591,8 @@ export {
   bg_greyscale_11,
   // 0.3 Border Color
   border_transparent,
-  border_primary,
-  border_primary_light,
+  border_main_primary,
+  border_main_secondary,
   border_secondary_1,
   border_secondary_2,
   border_secondary_3,

@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { quilt } from '../../dist';
 import {
@@ -36,11 +35,11 @@ import {
   pd_xl,
 } from '../../dist/themes/default/styles';
 
-const ThemePrimarySwatch = quilt.div`
+const ThemeMainPrimarySwatch = quilt.div`
   ${[bg_primary, pd_xl]}
 `;
 
-const ThemePrimaryLightSwatch = quilt.div`
+const ThemeMainSecondarySwatch = quilt.div`
   ${[bg_primary_light, pd_xl]}
 `;
 
@@ -160,55 +159,61 @@ const ThemeGreyscale11Swatch = quilt.div`
   ${[bg_greyscale_11, pd_xl]}
 `;
 
-storiesOf('Colors', module)
-  .add('Primary', () => (
-    <>
-      <ThemePrimarySwatch />
-      <ThemePrimaryLightSwatch />
-    </>
-  ))
-  .add('Secondary scale', () => (
-    <>
-      <ThemeSecondary1Swatch />
-      <ThemeSecondary2Swatch />
-      <ThemeSecondary3Swatch />
-      <ThemeSecondary4Swatch />
-      <ThemeSecondary5Swatch />
-      <ThemeSecondary6Swatch />
-      <ThemeSecondary7Swatch />
-      <ThemeSecondary8Swatch />
-      <ThemeSecondary9Swatch />
-      <ThemeSecondary10Swatch />
-    </>
-  ))
-  .add('Tertiary', () => (
-    <>
-      <ThemeTertiaryLightSwatch />
-      <ThemeTertiaryDarkSwatch />
-      <ThemeTertiaryComplementSwatch />
-    </>
-  ))
-  .add('Utility', () => (
-    <>
-      <ThemeUtilityLightSwatch />
-      <ThemeUtilityMediumSwatch />
-      <ThemeUtilityDarkSwatch />
-      <ThemeUtilityComplementSwatch />
-    </>
-  ))
-  .add('Greyscale', () => (
-    <>
-      <ThemeWhiteSwatch />
-      <ThemeGreyscale1Swatch />
-      <ThemeGreyscale2Swatch />
-      <ThemeGreyscale3Swatch />
-      <ThemeGreyscale4Swatch />
-      <ThemeGreyscale5Swatch />
-      <ThemeGreyscale6Swatch />
-      <ThemeGreyscale7Swatch />
-      <ThemeGreyscale8Swatch />
-      <ThemeGreyscale9Swatch />
-      <ThemeGreyscale10Swatch />
-      <ThemeGreyscale11Swatch />
-    </>
-  ));
+export const Main = () => (
+  <>
+    <ThemeMainPrimarySwatch />
+    <ThemeMainSecondarySwatch />
+  </>
+);
+
+export const SecondaryScale = () => (
+  <>
+    <ThemeSecondary1Swatch />
+    <ThemeSecondary2Swatch />
+    <ThemeSecondary3Swatch />
+    <ThemeSecondary4Swatch />
+    <ThemeSecondary5Swatch />
+    <ThemeSecondary6Swatch />
+    <ThemeSecondary7Swatch />
+    <ThemeSecondary8Swatch />
+    <ThemeSecondary9Swatch />
+    <ThemeSecondary10Swatch />
+  </>
+);
+
+export const Tertiary = () => (
+  <>
+    <ThemeTertiaryLightSwatch />
+    <ThemeTertiaryDarkSwatch />
+    <ThemeTertiaryComplementSwatch />
+  </>
+);
+
+export const Utility = () => (
+  <>
+    <ThemeUtilityLightSwatch />
+    <ThemeUtilityMediumSwatch />
+    <ThemeUtilityDarkSwatch />
+    <ThemeUtilityComplementSwatch />
+  </>
+);
+
+export const Greyscale = () => (
+  <>
+    <ThemeWhiteSwatch />
+    <ThemeGreyscale1Swatch />
+    <ThemeGreyscale2Swatch />
+    <ThemeGreyscale3Swatch />
+    <ThemeGreyscale4Swatch />
+    <ThemeGreyscale5Swatch />
+    <ThemeGreyscale6Swatch />
+    <ThemeGreyscale7Swatch />
+    <ThemeGreyscale8Swatch />
+    <ThemeGreyscale9Swatch />
+    <ThemeGreyscale10Swatch />
+    <ThemeGreyscale11Swatch />
+  </>
+);
+
+// tslint:disable-next-line: no-default-export
+export default { title: 'Colors' };
