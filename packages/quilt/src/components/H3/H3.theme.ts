@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import {
   font_bold,
-  font_primary,
+  font_default,
   font_size_lg,
   mg_none,
   no_underline,
@@ -13,7 +13,7 @@ import { H3Theme } from './interface';
 const H3Theme: H3Theme = {
   text: css`
     ${[
-      font_primary,
+      font_default,
       font_size_lg,
       font_bold,
       mg_none,

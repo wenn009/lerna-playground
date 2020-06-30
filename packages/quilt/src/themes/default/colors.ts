@@ -1,50 +1,46 @@
-import { AColors, IColors, StructureValueType } from '../../theme/structures';
+import { IColors as IDefaultColors } from '../../theme/structures';
 
-interface IDefaultColors<T extends StructureValueType> extends IColors<T> {
-  black: T;
-  charcoal: T;
-  gray: T;
-  lightGray: T;
-  coolGray: T;
-  fog: T;
-  white: T;
-  slate: T;
-  stone: T;
-  whiteSmoke: T;
-  blackHaze: T;
-  brandGreen: T;
-  warbyParkerBlue: T;
-  powder: T;
-  olympic: T;
-  teal: T;
-}
+const colors: IDefaultColors<string> = {
+  // PRIMARY
+  blue: '#3333FF',
+  cornflower: '#686DF3',
 
-class Colors extends AColors implements IDefaultColors<string> {
-  // Supporting Colors
-  fog: string = '#EEEFF0';
+  // SECONDARY
+  foundation: '#F2EEFB',
+  lilac: '#E6DDF8',
+  perfume: '#CBB8F7',
+  moment: '#AA9EF6',
+  portage: '#8A84F4',
+  royal: '#4250E0',
+  cerulean: '#2932C9',
+  jackson: '#1C209E',
+  quantum: '#0E0E76',
 
-  // Default
-  powder: string = '#7FB2BE';
-  teal: string = '#5C879F';
-  olympic: string = '#79A3C9';
-  warbyParkerBlue: string = '#49A6F4';
-  brandGreen: string = '#66C374';
-  black: string = '#000000';
-  charcoal: string = '#403E3B';
-  gray: string = '#A09E9D';
-  lightGray: string = '#EEEFF0';
-  coolGray: string = '#F0F3F4';
-  white: string = '#FFFFFF';
+  // TERTIARY
+  shiva: '#97DAF8',
+  celestial: '#2ED9C3',
+  macaroni: '#FFC27A',
 
-  // Used
-  slate: string = '#A09E9D';
-  stone: string = '#D6D5D2';
-  whiteSmoke: string = '#F5F7F7';
-  blackHaze: string = '#FAFBFB';
+  // UTILITY
+  lemon: '#FCCC0A',
+  tangerine: '#FB7421',
+  pomegranate: '#EE352E',
+  apple: '#389E45',
 
-  overlay: string = 'rgba(245, 247, 247, 0.9)';
-}
-
-const colors = new Colors();
+  // GREYSCALE
+  white: '#FFFFFF',
+  doctor: '#FAF8F8',
+  cultured: '#F7F4F4',
+  bonjour: '#E0DDDE',
+  nobel: '#B3B0B1',
+  pewter: '#9C999A',
+  frost: '#868384',
+  fedora: '#726F71',
+  scorpion: '#5B585A',
+  panther: '#444144',
+  thunder: '#2E2B2D',
+  jet: '#171417',
+  black: '#000000',
+};
 
 export { colors, IDefaultColors };

@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import {
+  font_default,
   font_med,
-  font_primary,
   font_size_sm,
   mg_none,
   no_underline,
@@ -14,7 +14,7 @@ import { BodyTextTheme } from './interface';
 const BodyTextTheme: BodyTextTheme = {
   text: css`
     ${[
-      font_primary,
+      font_default,
       font_size_sm,
       font_med,
       mg_none,

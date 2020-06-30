@@ -18,8 +18,6 @@ import {
   pd_top_xxs,
   pos_relative,
   text_center,
-  text_color_charcoal,
-  text_color_secondary,
   whitespace_no_wrap,
   width_full,
 } from '../../themes/default/styles';
@@ -48,7 +46,6 @@ const LinkTheme: LinkTheme = {
   text: {
     text: css`
       ${[
-        text_color_charcoal,
         pd_top_xxs,
         pd_bottom_xxs,
         pd_left_xs,
@@ -56,10 +53,6 @@ const LinkTheme: LinkTheme = {
         width_full,
         text_center,
       ]}
-
-      *:not(:disabled) > &:hover {
-        ${text_color_secondary};
-      }
     `,
   },
 };

@@ -11,9 +11,6 @@ import { H5Theme } from '../../components/H5/H5.theme';
 import { H6Theme } from '../../components/H6/H6.theme';
 import { IconTheme } from '../../components/Icon/Icon.theme';
 import { LinkTheme } from '../../components/Link/Link.theme';
-import { PrimaryButtonTheme } from '../../components/PrimaryButton/PrimaryButton.theme';
-import { SecondaryButtonTheme } from '../../components/SecondaryButton/SecondaryButton.theme';
-import { TertiaryButtonTheme } from '../../components/TertiaryButton/TertiaryButton.theme';
 import { ITheme as IDefaultTheme } from '../../theme/structures';
 import { breakpoints } from './breakpoints';
 import { colors } from './colors';
@@ -38,9 +35,6 @@ const theme: IDefaultTheme = {
     H6: H6Theme,
     Icon: IconTheme,
     Link: LinkTheme,
-    PrimaryButton: PrimaryButtonTheme,
-    SecondaryButton: SecondaryButtonTheme,
-    TertiaryButton: TertiaryButtonTheme,
   },
   core: {
     breakpoints,

@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import {
   font_bold,
-  font_primary,
+  font_default,
   font_size_sm,
   mg_none,
   no_underline,
@@ -13,7 +13,7 @@ import { H5Theme } from './interface';
 const H5Theme: H5Theme = {
   text: css`
     ${[
-      font_primary,
+      font_default,
       font_size_sm,
       font_bold,
       mg_none,

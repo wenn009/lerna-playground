@@ -18,11 +18,7 @@ import { H5Theme } from '../components/H5/interface';
 import { H6Theme } from '../components/H6/interface';
 import { IconTheme } from '../components/Icon/interface';
 import { LinkTheme } from '../components/Link/interface';
-import { PrimaryButtonTheme } from '../components/PrimaryButton/interface';
 import { QuiltComponentProps } from '../components/QuiltComponent';
-import { SecondaryButtonTheme } from '../components/SecondaryButton/interface';
-import { TertiaryButtonTheme } from '../components/TertiaryButton/interface';
-import { OpenColor } from './openColor';
 
 type ThemeGetterType = (props: { qGlobal: object }) => string;
 type StructureValueType = string | ThemeGetterType;
@@ -39,10 +35,7 @@ type ComponentThemes =
   | H5Theme
   | H6Theme
   | IconTheme
-  | LinkTheme
-  | PrimaryButtonTheme
-  | SecondaryButtonTheme
-  | TertiaryButtonTheme;
+  | LinkTheme;
 
 interface IBreakpoints<T extends StructureValueType> {
   m: T;
@@ -51,44 +44,55 @@ interface IBreakpoints<T extends StructureValueType> {
 }
 
 interface IColors<T extends StructureValueType> {
-  black: T;
-  white: T;
   [color: string]: T;
 }
 
-abstract class AColors extends OpenColor implements IColors<string> {
-  black: string = '#000000';
-  white: string = '#ffffff';
-  [color: string]: string;
-}
-
-interface IGradientValue<T extends StructureValueType> {
-  start: T;
-  stop: T;
-}
-
-interface IOverlayValue<T extends StructureValueType> {
-  default: T;
-}
-
-interface ITextValue<T extends StructureValueType> {
-  default: T;
-  muted: T;
-}
-
 interface IPalette<T extends StructureValueType> {
-  primary: {
-    light: T;
-    main: T;
+  main: {
+    primary: T;
+    secondary: T;
   };
   secondary: {
-    complement: T;
-    light: T;
-    main: T;
+    scale_1: T;
+    scale_2: T;
+    scale_3: T;
+    scale_4: T;
+    scale_5: T;
+    scale_6: T;
+    scale_7: T;
+    scale_8: T;
+    scale_9: T;
+    scale_10: T;
   };
-  text: ITextValue<T>;
-  gradient: IGradientValue<T>;
-  overlay: IOverlayValue<T>;
+  tertiary: {
+    light: T;
+    dark: T;
+    complement: T;
+  };
+  utility: {
+    light: T;
+    medium: T;
+    dark: T;
+    complement: T;
+  };
+  greyscale: {
+    white: T;
+    scale_1: T;
+    scale_2: T;
+    scale_3: T;
+    scale_4: T;
+    scale_5: T;
+    scale_6: T;
+    scale_7: T;
+    scale_8: T;
+    scale_9: T;
+    scale_10: T;
+    scale_11: T;
+    black: T;
+  };
+  text: {
+    default: T;
+  };
 }
 
 interface IScale<T extends StructureValueType> {
@@ -126,8 +130,7 @@ interface ISpaces<T extends StructureValueType> {
 }
 
 interface IFonts<T extends StructureValueType> {
-  primary: T;
-  secondary: T;
+  default: T;
 }
 
 interface ITheme {
@@ -145,9 +148,6 @@ interface ITheme {
     H6: H6Theme;
     Icon: IconTheme;
     Link: LinkTheme;
-    PrimaryButton: PrimaryButtonTheme;
-    SecondaryButton: SecondaryButtonTheme;
-    TertiaryButton: TertiaryButtonTheme;
   };
   core: {
     breakpoints: IBreakpoints<string>;
@@ -183,7 +183,6 @@ type StyledCss =
   | Array<FlattenInterpolation<ThemeProps<any>>>;
 
 export {
-  AColors,
   ComponentThemes,
   ComponentThemeValue,
   cssType,

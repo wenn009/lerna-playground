@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import {
   font_bold,
-  font_primary,
+  font_default,
   font_size_md,
   mg_none,
   no_underline,
@@ -13,7 +13,7 @@ import { H4Theme } from './interface';
 const H4Theme: H4Theme = {
   text: css`
     ${[
-      font_primary,
+      font_default,
       font_size_md,
       font_bold,
       mg_none,
