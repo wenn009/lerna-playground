@@ -12,8 +12,8 @@ import {
   bg_greyscale_7,
   bg_greyscale_8,
   bg_greyscale_9,
-  bg_primary,
-  bg_primary_light,
+  bg_main_primary,
+  bg_main_secondary,
   bg_secondary_scale_1,
   bg_secondary_scale_10,
   bg_secondary_scale_2,
@@ -36,11 +36,11 @@ import {
 } from '../../dist/themes/default/styles';
 
 const ThemeMainPrimarySwatch = quilt.div`
-  ${[bg_primary, pd_xl]}
+  ${[bg_main_primary, pd_xl]}
 `;
 
 const ThemeMainSecondarySwatch = quilt.div`
-  ${[bg_primary_light, pd_xl]}
+  ${[bg_main_secondary, pd_xl]}
 `;
 
 const ThemeSecondary1Swatch = quilt.div`

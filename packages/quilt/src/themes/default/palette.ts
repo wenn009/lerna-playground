@@ -45,7 +45,7 @@ const palette: IDefaultPalette<string> = {
     black: colors.black,
   },
   text: {
-    default: colors.cornflower,
+    default: colors.black,
   },
 };
 
