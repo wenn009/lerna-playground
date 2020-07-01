@@ -1,0 +1,10 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 0.0.2 (2020-07-01)
+
+### Bug Fixes
+
+- revert accff ([fb478c8](https://github.com/foursquare/web-packages/commit/fb478c8))
