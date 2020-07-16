@@ -40,9 +40,21 @@ Well, one day we will have some...
 
 ## Documentation
 
-STORYBOOK LINK TBD
+go/cupcake or http://foursquare-cupcake.s3-website-us-east-1.amazonaws.com/
 
 https://www.figma.com/file/1JKh9woyHy7VbJj7PWPUKY/Components_Signed-off
+
+### Deploying Storybook
+
+In order to deploy the storybook to AWS S3, you must
+
+1. Get the sewichi aws access key and secret from the Product Platform team(email pp-tickets@foursquare.com).
+
+2. Have [awscli](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) installed.
+
+3. Then you can simply do `npm run storybook:deploy`.
+
+4. If your default aws profile is not the sewichi account, you can change the aws profile used to run the command with the aws-profile option. `npm run storybook:deploy --aws-profile=myprofile`
 
 ## Development
 
