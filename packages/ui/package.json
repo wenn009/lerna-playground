@@ -1,6 +1,6 @@
 {
   "name": "@foursquare/ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "src/index.js",
   "publishConfig": {
     "registry": "https://foursqfduaredev.jfrog.io/foursquaredev/api/npm/npm/"
@@ -9,6 +9,6 @@
     "react": "^16.8.6"
   },
   "dependencies": {
-    "@foursquare/utils": "^0.0.3"
+    "@foursquare/utils": "^0.0.4"
   }
 }
