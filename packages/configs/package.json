@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://foursquaredev.jfrog.io/foursquaredev/api/npm/npm/"
+    "registry": "https://foursquarfdedev.jfrog.io/foursquaredev/api/npm/npm/"
   },
   "dependencies": {
     "@babel/core": "^7.4.3",

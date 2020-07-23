@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Id": "Policy1572904190523",
+  "Statement": [
+    {
+      "Sid": "SourceIP",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": ["arn:aws:s3:::web-quilt", "arn:aws:s3:::web-quilt/*"],
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": ["47.18.181.131/32"]
+        }
+      }
+    }
+  ]
+}
